@@ -1,18 +1,12 @@
-# UCS Univention SAMBA 4
-Curso GRÁTIS UCS Univention SAMBA 4
-O QUE VOCÊ VAI APRENDER?
+# Curso GRÁTISA SAMBA 4 UCS Univention 
+
+Curso GRÁTIS UCS Univention SAMBA 4, O QUE VOCÊ VAI APRENDER?
 
 Essa série de cursos Hands On (Mão na Massa) do Projeto AulaEAD criado pelo Prof. Robson Vaamonde dos Projetos ProcedimentosEmTI e BoraParaPrática!!!! tem como objetivo mostrar soluções técnicas e operacionais dos melhores Appliances Open Source do mercado.
 
-
-
 A solução UCS Univention Corporate Server foi criada para facilitar a instalação e implementação do SAMBA 4 Active Directory Domain Service Open Source, principalmente para os Administradores de Redes que nunca trabalhou com GNU/Linux antes, todo o processo de instalação e configuração e feito 100% em modo Gráfico e com compatibilidade em redes heterogênicas.
 
-
-
 Para esse curso o seguinte cenário será montado utilizando a topologia abaixo:
-
-
 
 Ideal para Estudantes e Profissionais de Redes que desejam se aprofundar nos pré-requisitos técnicos e práticos para Implementar Servidores de Controladores de Domínio Open Source utilizando o SAMBA 4 e o Appliance do UCS Core Free.
 
