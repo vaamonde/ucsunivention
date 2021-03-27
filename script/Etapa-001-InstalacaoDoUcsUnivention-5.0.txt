@@ -1,0 +1,182 @@
+Autor: Robson Vaamonde
+Procedimentos em TI: http://procedimentosemti.com.br
+Bora para Prática: http://boraparapratica.com.br
+Robson Vaamonde: http://vaamonde.com.br
+Facebook Procedimentos em TI: https://www.facebook.com/ProcedimentosEmTi
+Facebook Bora para Prática: https://www.facebook.com/BoraParaPratica
+Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem
+YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica
+LinkedIn Robson Vaamonde: https://www.linkedin.com/in/robson-vaamonde-0b029028/
+Data de criação: 24/01/2021
+Data de atualização: 26/03/2021
+Versão: 0.02
+Testado e homologado no UCS Univention Core Free 5.0.x
+
+Documentação da versão 5.0.x
+04 Oct 2019 The Decision has been made: UCS 5.0 is coming!: https://www.univention.com/blog-en/2019/10/the-decision-has-been-made-ucs-5-0-is-coming/
+16 Oct 2020 UCS 5.0 status update: Beta Release in December 2020: https://www.univention.com/blog-en/2020/10/ucs-5-0-status-update-beta-release-in-december-2020/
+11 Dec 2020 UCS 5.0 – Focus instead of feature overkill: https://www.univention.com/blog-en/2020/12/ucs-5-0-discontinued-features/
+16 Dec 2020 UCS 5.0 Beta: Preview of the new generation: https://www.univention.com/blog-en/2020/12/ucs-5-0-beta-released/#comment-16772
+22 Mar 2021 UCS 5.0 Release Candidate 0: https://help.univention.com/t/ucs-5-0-release-candidate-0/17545
+23 Mar 2021 Download UCS 5.0.0 RC0: https://download.software-univention.de/download/ucs-cds/ucs5.0-0-rc0/
+24 Mar 2021 UCS 5.0 – first release candidate published: https://www.univention.com/blog-en/2021/03/ucs-5-0-first-release-candidate-published/
+
+Primeira etapa: Download da ISO do UCS Univention Core Free:
+01. Link de download do UCS 5.0.x: https://download.software-univention.de/download/ucs-cds/ucs5.0-0-rc0/
+02. Versão do download UCS: 5.0.x RC0 (23/03/2021)
+03. Arquitetura do UCS: AMD64 (64-bit)
+04. Tipo de instalação: DVD Image (ISO) Installer
+
+UCS Univention Performance guide: https://docs.software-univention.de/performance-guide-4.2.pdf
+
+Segunda etapa: Criação e Configuração da Máquina Virtual no Oracle VirtualBOX
+01. Ferramentas;
+	Novo
+02. Nome e Sistema Operacional:
+		Nome: UCS-Univention-5.0
+		Pasta da Máquina: (deixar o padrão do sistema) 
+		Tipo: Linux
+		Versão: Debian (64-bit)
+		<Próximo>
+03. Tamanho da memória:
+		Tamanho: 4096MB
+		<Próximo>
+04. Disco Rígido:
+		Criar um novo disco rígido virtual agora
+		<Criar>
+05. Tipo de arquivo de disco rígido
+		VDI (VirtualBOX Disk Image)
+		<Próximo>
+06. Armazenamento em disco rígido físico
+		Dinamicamente alocado
+		<Próximo>
+07. Localização e tamanho do arquivo
+		Localização: (deixar o padrão do sistema)
+		Tamanho do disco: 50GB
+		<Criar>
+
+08. Configurações da Máquina Virtual UCS (Propriedades/Configurações)
+	Sistema
+		Processador
+			Processadores: 02 CPUs
+			Recursos Estendidos: Habilitar PAE/NX
+	Monitor
+		Tela
+			Memória de Vídeo: 128MB
+			Aceleração: Habilitar Aceleração 3D
+	Áudio
+		Habilitar Áudio: Desabilitar
+	Rede
+		Adaptador 1 (WAN)
+			Habilitar Placa de Rede
+			Conectado a: Rede Interna
+			Nome: (deixar o padrão do sistema: intnet)
+<OK>
+
+Instalação do UCS (link não atualizado para versão 5.0): https://docs.software-univention.de/quickstart-en-4.4.html
+
+Terceira etapa: Adicionando a ISO do UCS Univention
+01. VM UCS-Univention-5.0: 
+	<Iniciar>
+02. Selecione o disco rígido de boot
+		Selecionar um arquivo de disco óptico virtual
+03. Seletor de Discos Ópticos
+		Acrescentar
+		Selecione o arquivo de disco óptico virtual: ucs_5.0-0-rc0-amd64.iso
+		<Abrir>
+04. Not Attached
+		Selecionar: ucs_5.0-0-rc0-amd64.iso
+		<Escolher>
+	<Iniciar>
+
+Quarta Etapa: Instalando o UCS Univention 5.0.x RC0
+01. Parar o Boot do Grub do UCS Univention
+		Start with manual network settings <Enter>
+02. Select a Language
+		English - English 
+		<Continue>
+03. Select your Location
+		other
+			South America
+				Brazil 
+		<Continue>
+04. Configure Locales
+		United States - en_US.UTF-8
+		<Continue>
+05. Configure the Keyboard
+		American English
+		<Continue>
+06. Configure the network
+		IP address: 172.16.1.10/24
+		<Continue>
+07. Configure the network
+		Gateway: 172.16.1.254
+		<Continue>
+08. Configure the network
+		Name server addresses: 172.16.1.10 8.8.8.8 8.8.4.4
+		<Continue>
+09. Se up users and passwords
+		Root password: pti@2021
+		Re-enter password to verify: pti@2021
+		<Continue>
+10. Partition disks
+		Partitioning method: Guided - use entire disk and set up LVM
+		<Continue>
+11. Partition disks
+		Select disk to partition: SCSI3 (0,0,0)(sda) - 53,7 GB ATA VBOX HARDISK
+		<Continue>
+12 Partition disks
+		Partitioning scheme: Separate /home, /var and /tmp partitions
+		<Continue>
+13  Partition disks
+		Write the changes to disks and configure? Yes
+		<Continue>
+14  Partition disks
+		Write the changes to disks? Yes
+		<Continue>
+15. Finish the installation
+		<Continue>
+
+Quinta Etapa: Configuração o UCS Univention 5.0.x RC0
+01. Domain setup
+		Create a new UCS domain (Recommended)
+		<Next>
+02. Account information
+		Organization name: Bora para Pratica 
+		E-mail address to active UCS: email@boraparapratica.com.br
+		<Next>
+03. Host settings
+		Fully qualified domain name: ptispo01dc01.pti.intra
+		LDAP base: dc=pti,dc=intra
+		<Next>
+04. Confirm configuration settings
+		Disable: Update system after setup
+		<Configure System>
+05. UCS setup successful
+		<Finish>
+
+Sexta etapa: Atualizando o UCS Univention
+01. Login
+		login: root <Enter>
+		password: pti@2021 <Enter>
+02. Upgrade
+		univention-upgrade <Enter>
+		Do you want to continue [Y|N]? Y <Enter>
+03. Reboot
+		reboot <Enter>
+
+Sétima etapa: Acessando o WebManagement do UCS Univention
+01. Acessar o WebManagement (recomendado utilizar o navegado Firefox)
+		https://172.16.1.10
+		Avançado
+		Aceitar o risco e continuar
+02. System and Domain Manager
+		Username: administrator
+		Password: pti@2021
+03. Welcome to UMC
+		Everything worked great <Next>
+		Enable one-time statistic on hardware configuration <Next>
+		Upload License File... <Next>
+		Further information <Next>
+		Completion of startup wizard: <Finish>
+
