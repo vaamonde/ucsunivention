@@ -24,16 +24,17 @@ pfSense: https://www.pfsense.org/<br>
 Microsoft Windows:  https://www.microsoft.com/pt-br/windows<br>
 Oracle VirtualBOX: https://www.virtualbox.org/
 
-## **Playlist do YouTUBE com todos os Vídeos do OCS Inventory NG, FusionInventory e GLPI Help Desk:**
+## **Playlist do YouTUBE com todos os Vídeos do UCS Univention Core Free 4.4.x:**
 Link da Playlist: https://www.youtube.com/playlist?list=PLozhsZB1lLUOqMTI1-BLIji1cqkE6MWqV
 
-## **Apresentação do Curso UCS Univention Corporate Server SAMBA 4**
+## **COMO instalar o UCS Univention Core Free 5.0 RC0 no VirtualBOX**
 
-Apresentação do Curso de Hands On UCS Univention Corporate Server - SAMBA 4
+Vídeo mostrando os procedimentos básicos para instalar a NOVA VERSÃO do UCS Univenton Core Free 5.0 Release Candidate RC0 no VirtualBOX. 
 
-A solução UCS Univention Corporate Server foi criada para facilitar a instalação e implementação do SAMBA-4 Active Directory Domain Service Open Source em redes corporativas de Pequeno, Médio e até Grande Porte, ela foi criada principalmente para ajudar os Administradores de Redes que nunca trabalhou com GNU/Linux antes, todo o processo de instalação e configuração e feito 100% em modo Gráfico e com compatibilidade em redes heterogênicas.
+A solução UCS Univention Corporate Server foi criada para facilitar a instalação e implementação do SAMBA-4 Active Directory Domain Service Open Source em redes corporativas de Pequeno, Médio e até Grande Porte, ela foi criada principalmente para ajudar os Administradores de Redes que nunca trabalhou com GNU/Linux antes, todo o processo de instalação e configuração e feito 100% em modo Gráfico e com compatibilidade total em redes heterogênicas.
 
-[![Apresentação do Curso](http://img.youtube.com/vi/qbxv2qAW5jU/0.jpg)](http://www.youtube.com/watch?v=qbxv2qAW5jU "Apresentação do Curso")
+[![UCS Core Free 5.0 RC0](http://img.youtube.com/vi/MIf7F-PWdD4/0.jpg)](http://www.youtube.com/watch?v=MIf7F-PWdD4 "UCS Core Free 5.0 RC0")
 
-Link da vídeo aula: https://www.youtube.com/watch?v=qbxv2qAW5jU
+Link da vídeo aula: https://www.youtube.com/watch?v=MIf7F-PWdD4&t
 
+Link do script utilizado nesse vídeo: https://github.com/vaamonde/ucsunivention/blob/master/script/Etapa-001-InstalacaoDoUcsUnivention-5.0.txt
