@@ -33,8 +33,8 @@ Vídeo mostrando os procedimentos básicos para instalar a NOVA VERSÃO do UCS U
 
 A solução UCS Univention Corporate Server foi criada para facilitar a instalação e implementação do SAMBA-4 Active Directory Domain Service Open Source em redes corporativas de Pequeno, Médio e até Grande Porte, ela foi criada principalmente para ajudar os Administradores de Redes que nunca trabalhou com GNU/Linux antes, todo o processo de instalação e configuração e feito 100% em modo Gráfico e com compatibilidade total em redes heterogênicas.
 
-[![UCS Core Free 5.0 RC0](http://img.youtube.com/vi/MIf7F-PWdD4/0.jpg)](http://www.youtube.com/watch?v=MIf7F-PWdD4 "UCS Core Free 5.0 RC0")
+[![UCS Core Free 5.0 RC0](http://img.youtube.com/vi/6iqmK7Gsou8/0.jpg)](http://www.youtube.com/watch?v=6iqmK7Gsou8 "UCS Core Free 5.0 RC0")
 
-Link da vídeo aula: https://www.youtube.com/watch?v=MIf7F-PWdD4&t
+Link da vídeo aula: http://www.youtube.com/watch?v=6iqmK7Gsou8
 
 Link do script utilizado nesse vídeo: https://github.com/vaamonde/ucsunivention/blob/master/script/Etapa-001-InstalacaoDoUcsUnivention-5.0.txt
