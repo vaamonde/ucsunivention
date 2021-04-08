@@ -27,9 +27,12 @@ Oracle VirtualBOX: https://www.virtualbox.org/
 ## **Playlist do YouTUBE com todos os Vídeos do UCS Univention Core Free 4.4.x:**
 Link da Playlist: https://www.youtube.com/playlist?list=PLozhsZB1lLUOqMTI1-BLIji1cqkE6MWqV
 
+## **Playlist do YouTUBE com todos os Vídeos do UCS Univention Core Free 5.0.x:**
+Link do Palylist: https://www.youtube.com/playlist?list=PLozhsZB1lLUMFKPS3riNX-03GnuavrQ5H
+
 ## **COMO instalar o UCS Univention Core Free 5.0 RC0 no VirtualBOX**
 
-Vídeo mostrando os procedimentos básicos para instalar a NOVA VERSÃO do UCS Univenton Core Free 5.0 Release Candidate RC0 no VirtualBOX. 
+Vídeo mostrando os procedimentos básicos para instalar a NOVA VERSÃO do UCS Univenton Core Free 5.0.x Release Candidate RC0 no VirtualBOX. 
 
 A solução UCS Univention Corporate Server foi criada para facilitar a instalação e implementação do SAMBA-4 Active Directory Domain Service Open Source em redes corporativas de Pequeno, Médio e até Grande Porte, ela foi criada principalmente para ajudar os Administradores de Redes que nunca trabalhou com GNU/Linux antes, todo o processo de instalação e configuração e feito 100% em modo Gráfico e com compatibilidade total em redes heterogênicas.
 
