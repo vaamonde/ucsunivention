@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unattend xmlns="urn:schemas-microsoft-com:setup" description="Auto unattend" author="pkgmgr.exe">
+    <servicing>
+        <package action="stage">
+            <assemblyIdentity buildType="release" language="neutral" name="Microsoft-Windows-RemoteServerAdministrationTools-Client-Package-TopLevel" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" version="10.0.16299.2"/>
+            <source location="." permanence="temporary"/>
+        </package>
+    </servicing>
+</unattend>
