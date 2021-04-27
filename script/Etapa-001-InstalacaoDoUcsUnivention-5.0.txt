@@ -8,8 +8,8 @@ Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem
 YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica
 LinkedIn Robson Vaamonde: https://www.linkedin.com/in/robson-vaamonde-0b029028/
 Data de criação: 24/01/2021
-Data de atualização: 26/03/2021
-Versão: 0.02
+Data de atualização: 27/04/2021
+Versão: 0.03
 Testado e homologado no UCS Univention Core Free 5.0.x
 
 Documentação da versão 5.0.x
@@ -20,10 +20,17 @@ Documentação da versão 5.0.x
 22 Mar 2021 UCS 5.0 Release Candidate 0: https://help.univention.com/t/ucs-5-0-release-candidate-0/17545
 23 Mar 2021 Download UCS 5.0.0 RC0: https://download.software-univention.de/download/ucs-cds/ucs5.0-0-rc0/
 24 Mar 2021 UCS 5.0 – first release candidate published: https://www.univention.com/blog-en/2021/03/ucs-5-0-first-release-candidate-published/
+21 Apr 2021 UCS 5.0 - UCS 5.0 Release Candidate 1: https://help.univention.com/t/ucs-5-0-release-candidate-1/17721
+21 Apr 2021 Download UCS 5.0.0 RC1: https://download.software-univention.de/download/ucs-cds/ucs5.0-0-rc1/
 
 Primeira etapa: Download da ISO do UCS Univention Core Free:
 01. Link de download do UCS 5.0.x: https://download.software-univention.de/download/ucs-cds/ucs5.0-0-rc0/
 02. Versão do download UCS: 5.0.x RC0 (23/03/2021)
+03. Arquitetura do UCS: AMD64 (64-bit)
+04. Tipo de instalação: DVD Image (ISO) Installer
+
+01. Link de download do UCS 5.0.x: https://download.software-univention.de/download/ucs-cds/ucs5.0-0-rc1/
+02. Versão do download UCS: 5.0.x RC1 (21/04/2021)
 03. Arquitetura do UCS: AMD64 (64-bit)
 04. Tipo de instalação: DVD Image (ISO) Installer
 
