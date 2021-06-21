@@ -16,6 +16,7 @@ Atualização do UCS: https://docs.software-univention.de/quickstart-en-5.0.html
 Manual do UCS: https://docs.software-univention.de/manual-5.0.html
 
 Documentação da atualização: https://docs.software-univention.de/manual-5.0.html#computers:Introduction
+
 Primeira etapa: Atualizando o UCS Univention via Bash/Shell
 01. Login
 		login: root <Enter>
@@ -44,6 +45,7 @@ Segunda etapa: Atualizando o UCS Univention via WebManagement
 			Install Package Update
 
 Documentação do Licenciamento: https://docs.software-univention.de/manual-5.0.html#central:license
+
 Terceira etapa: Licenciando o UCS Univention
 01. Acessar o WebManagement (recomendado utilizar o navegado Firefox)
 		https://172.16.1.10
