@@ -8,8 +8,8 @@ Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem
 YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica
 LinkedIn Robson Vaamonde: https://www.linkedin.com/in/robson-vaamonde-0b029028/
 Data de criação: 24/01/2021
-Data de atualização: 27/04/2021
-Versão: 0.03
+Data de atualização: 21/06/2021
+Versão: 0.05
 Testado e homologado no UCS Univention Core Free 5.0.x
 
 Documentação da versão 5.0.x
@@ -22,6 +22,7 @@ Documentação da versão 5.0.x
 24 Mar 2021 UCS 5.0 – first release candidate published: https://www.univention.com/blog-en/2021/03/ucs-5-0-first-release-candidate-published/
 21 Apr 2021 UCS 5.0 - UCS 5.0 Release Candidate 1: https://help.univention.com/t/ucs-5-0-release-candidate-1/17721
 21 Apr 2021 Download UCS 5.0.0 RC1: https://download.software-univention.de/download/ucs-cds/ucs5.0-0-rc1/
+26 May 2021 New Design and modern Core: https://www.univention.com/blog-en/2021/05/release-univention-corporate-server-5-0-2/ 
 
 Primeira etapa: Download da ISO do UCS Univention Core Free:
 01. Link de download do UCS 5.0.x: https://download.software-univention.de/download/ucs-cds/ucs5.0-0-rc0/
@@ -34,33 +35,36 @@ Primeira etapa: Download da ISO do UCS Univention Core Free:
 03. Arquitetura do UCS: AMD64 (64-bit)
 04. Tipo de instalação: DVD Image (ISO) Installer
 
+01. Link Oficial da Versão 5.0.x: https://www.univention.com/downloads/download-ucs/
+02. Documentação Oficial da Versão 5.0.x: https://docs.software-univention.de/index.html.en
+
 UCS Univention Performance guide: https://docs.software-univention.de/performance-guide-4.2.pdf
 
 Segunda etapa: Criação e Configuração da Máquina Virtual no Oracle VirtualBOX
 01. Ferramentas;
-	Novo
-02. Nome e Sistema Operacional:
-		Nome: UCS-Univention-5.0
-		Pasta da Máquina: (deixar o padrão do sistema) 
-		Tipo: Linux
-		Versão: Debian (64-bit)
-		<Próximo>
-03. Tamanho da memória:
-		Tamanho: 4096MB
-		<Próximo>
-04. Disco Rígido:
-		Criar um novo disco rígido virtual agora
-		<Criar>
-05. Tipo de arquivo de disco rígido
-		VDI (VirtualBOX Disk Image)
-		<Próximo>
-06. Armazenamento em disco rígido físico
-		Dinamicamente alocado
-		<Próximo>
-07. Localização e tamanho do arquivo
-		Localização: (deixar o padrão do sistema)
-		Tamanho do disco: 50GB
-		<Criar>
+		Novo
+			Nome e Sistema Operacional:
+			Nome: UCS Univention 5.0
+			Pasta da Máquina: (deixar o padrão do sistema) 
+			Tipo: Linux
+			Versão: Debian (64-bit)
+			<Próximo>
+		Tamanho da memória:
+			Tamanho: 4096MB
+			<Próximo>
+		Disco Rígido:
+			Criar um novo disco rígido virtual agora
+			<Criar>
+				Tipo de arquivo de disco rígido
+				VDI (VirtualBOX Disk Image)
+				<Próximo>
+			Armazenamento em disco rígido físico
+				Dinamicamente alocado
+				<Próximo>
+			Localização e tamanho do arquivo
+				Localização: (deixar o padrão do sistema)
+				Tamanho do disco: 50GB
+				<Criar>
 
 08. Configurações da Máquina Virtual UCS (Propriedades/Configurações)
 	Sistema
@@ -78,25 +82,25 @@ Segunda etapa: Criação e Configuração da Máquina Virtual no Oracle VirtualB
 			Habilitar Placa de Rede
 			Conectado a: Rede Interna
 			Nome: (deixar o padrão do sistema: intnet)
-<OK>
+	<OK>
 
-Instalação do UCS (link não atualizado para versão 5.0): https://docs.software-univention.de/quickstart-en-4.4.html
+Instalação do UCS: https://docs.software-univention.de/quickstart-en-5.0.html
 
 Terceira etapa: Adicionando a ISO do UCS Univention
 01. VM UCS-Univention-5.0: 
 	<Iniciar>
-02. Selecione o disco rígido de boot
+	Selecione o disco rígido de boot
 		Selecionar um arquivo de disco óptico virtual
-03. Seletor de Discos Ópticos
+	Seletor de Discos Ópticos
 		Acrescentar
-		Selecione o arquivo de disco óptico virtual: ucs_5.0-0-rc0-amd64.iso
+		Selecione o arquivo de disco óptico virtual: UCS-Installation-amd64.iso
 		<Abrir>
-04. Not Attached
-		Selecionar: ucs_5.0-0-rc0-amd64.iso
+	Not Attached
+		Selecionar: UCS-Installation-amd64.iso
 		<Escolher>
 	<Iniciar>
 
-Quarta Etapa: Instalando o UCS Univention 5.0.x RC0
+Quarta Etapa: Instalando o UCS Univention 5.0.x Core Free
 01. Parar o Boot do Grub do UCS Univention
 		Start with manual network settings <Enter>
 02. Select a Language
@@ -120,11 +124,11 @@ Quarta Etapa: Instalando o UCS Univention 5.0.x RC0
 		Gateway: 172.16.1.254
 		<Continue>
 08. Configure the network
-		Name server addresses: 172.16.1.10 8.8.8.8 8.8.4.4
+		Name server addresses: 172.16.1.10 172.16.1.254 8.8.8.8
 		<Continue>
 09. Se up users and passwords
-		Root password: pti@2021
-		Re-enter password to verify: pti@2021
+		Root password: pti@2018
+		Re-enter password to verify: pti@2018
 		<Continue>
 10. Partition disks
 		Partitioning method: Guided - use entire disk and set up LVM
@@ -144,7 +148,7 @@ Quarta Etapa: Instalando o UCS Univention 5.0.x RC0
 15. Finish the installation
 		<Continue>
 
-Quinta Etapa: Configuração o UCS Univention 5.0.x RC0
+Quinta Etapa: Configuração o UCS Univention 5.0.x Core Free
 01. Domain setup
 		Create a new UCS domain (Recommended)
 		<Next>
@@ -186,4 +190,3 @@ Sétima etapa: Acessando o WebManagement do UCS Univention
 		Upload License File... <Next>
 		Further information <Next>
 		Completion of startup wizard: <Finish>
-

@@ -1,0 +1,55 @@
+Autor: Robson Vaamonde
+Procedimentos em TI: http://procedimentosemti.com.br
+Bora para Prática: http://boraparapratica.com.br
+Robson Vaamonde: http://vaamonde.com.br
+Facebook Procedimentos em TI: https://www.facebook.com/ProcedimentosEmTi
+Facebook Bora para Prática: https://www.facebook.com/BoraParaPratica
+Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem
+YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica
+LinkedIn Robson Vaamonde: https://www.linkedin.com/in/robson-vaamonde-0b029028/
+Data de criação: 21/06/2021
+Data de atualização: 21/06/2021
+Versão: 0.01
+Testado e homologado no UCS Univention Core Free 5.0.x
+
+Atualização do UCS: https://docs.software-univention.de/quickstart-en-5.0.html
+
+Primeira etapa: Atualizando o UCS Univention via Bash/Shell
+01. Login
+		login: root <Enter>
+		password: pti@2018 <Enter>
+02. Upgrade
+		univention-upgrade <Enter>
+		Do you want to continue [Y|N]? Y <Enter>
+03. Reboot
+		reboot <Enter>
+04. Apt
+		apt update
+		apt upgrade
+		apt autoremove
+		apt autoclean
+
+Segunda etapa: Atualizando o UCS Univention via WebManagement
+01. Acessar o WebManagement (recomendado utilizar o navegado Firefox)
+		https://172.16.1.10
+02. System and Domain Manager
+		Username: administrator
+		Password: pti@2021
+03. Favorites ou Software
+		Software Update
+			Check Package Update
+			Install Package Update
+
+Terceira etapa: Licenciando o UCS Univention
+01. Acessar o WebManagement (recomendado utilizar o navegado Firefox)
+		https://172.16.1.10
+02. System and Domain Manager
+		Username: administrator
+		Password: pti@2021
+03. Favorites
+		Welcome!
+			Everything worked great <Next>
+			Enable one-time statistic on hardware configuration <Next>
+			Upload License File... <Next>
+			Further information <Next>
+			Completion of startup wizard: <Finish>

@@ -40,4 +40,18 @@ A solução UCS Univention Corporate Server foi criada para facilitar a instala�
 
 Link da vídeo aula: http://www.youtube.com/watch?v=6iqmK7Gsou8
 
-Link do script utilizado nesse vídeo: https://github.com/vaamonde/ucsunivention/blob/master/script/Etapa-001-InstalacaoDoUcsUnivention-5.0.txt
+Link do script utilizado nesse vídeo: https://github.com/vaamonde/ucsunivention/blob/master/etapas/Etapa-001-InstalacaoDoUcsUnivention-5.0.txt
+
+## **#001_ Instalação do UCS Univention Core Free 5.0**
+
+Vídeo mostrando os procedimentos básicos para instalar a VERSÃO OFICIAL do UCS Univenton Core Free 5.0.x no VirtualBOX. 
+
+A quinta versão principal do Univention Corporate Server está pronta e disponível para download. UCS 5.0 contém novos recursos, tem uma aparência nova, vem com várias melhorias e correções de bugs. A nova versão também usa um novo núcleo: UCS 5.0 é baseado em Debian 10 (“Buster”) e Python 3.
+
+Nesta postagem do blog, gostaria de apresentar as mudanças mais importantes, dar dicas para o processo de atualização e revelar o que estamos planejando para lançamentos futuros.
+
+[![UCS Core Free 5.0](http://img.youtube.com/vi//0.jpg)]( "UCS Core Free 5.0")
+
+Link da vídeo aula: 
+
+Link do script utilizado nesse vídeo: https://github.com/vaamonde/ucsunivention/blob/master/etapas/Etapa-001-InstalacaoDoUcsUnivention-5.0.txt
