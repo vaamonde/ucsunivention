@@ -48,10 +48,20 @@ Vídeo mostrando os procedimentos básicos para instalar a VERSÃO OFICIAL do UC
 
 A quinta versão principal do Univention Corporate Server está pronta e disponível para download. UCS 5.0 contém novos recursos, tem uma aparência nova, vem com várias melhorias e correções de bugs. A nova versão também usa um novo núcleo: UCS 5.0 é baseado em Debian 10 (“Buster”) e Python 3.
 
-Nesta postagem do blog, gostaria de apresentar as mudanças mais importantes, dar dicas para o processo de atualização e revelar o que estamos planejando para lançamentos futuros.
-
 [![UCS Core Free 5.0](http://img.youtube.com/vi//0.jpg)]( "UCS Core Free 5.0")
 
 Link da vídeo aula: 
 
 Link do script utilizado nesse vídeo: https://github.com/vaamonde/ucsunivention/blob/master/etapas/Etapa-001-InstalacaoDoUcsUnivention-5.0.txt
+
+## **#001_ Atualização e Licenciamento do UCS Univention Core Free 5.0**
+
+Vídeo mostrando os procedimentos básicos para atualizar e licenciar o UCS Univenton Core Free 5.0.x no VirtualBOX. 
+
+Existem duas maneiras de atualizar os sistemas UCS; tanto em sistemas individuais (via atualização de software do módulo UMC ou linha de comando) ou via política de computador para grupos maiores de sistemas UCS.
+
+[![Atualização e Licenciamento](http://img.youtube.com/vi//0.jpg)]( "Atualização e Licenciamento")
+
+Link da vídeo aula: 
+
+Link do script utilizado nesse vídeo: https://github.com/vaamonde/ucsunivention/blob/master/etapas/Etapa-002-AtualizacaoDoUcsUnivention-5.0.txt

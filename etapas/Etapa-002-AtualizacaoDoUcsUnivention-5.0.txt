@@ -13,33 +13,37 @@ Versão: 0.01
 Testado e homologado no UCS Univention Core Free 5.0.x
 
 Atualização do UCS: https://docs.software-univention.de/quickstart-en-5.0.html
+Manual do UCS: https://docs.software-univention.de/manual-5.0.html
 
+Documentação da atualização: https://docs.software-univention.de/manual-5.0.html#computers:Introduction
 Primeira etapa: Atualizando o UCS Univention via Bash/Shell
 01. Login
 		login: root <Enter>
 		password: pti@2018 <Enter>
 02. Upgrade
 		univention-upgrade <Enter>
-		Do you want to continue [Y|N]? Y <Enter>
-03. Reboot
+			Do you want to continue [Y|N]? Y <Enter>
 		reboot <Enter>
-04. Apt
-		apt update
-		apt upgrade
+03. Apt
+		apt update <Enter>
+		apt upgrade <Enter>
 		apt autoremove
-		apt autoclean
+			Do you want to continue [Y|N]? Y <Enter>
+		apt autoclean <Enter>
+		reboot <Enter>
 
 Segunda etapa: Atualizando o UCS Univention via WebManagement
 01. Acessar o WebManagement (recomendado utilizar o navegado Firefox)
 		https://172.16.1.10
 02. System and Domain Manager
 		Username: administrator
-		Password: pti@2021
+		Password: pti@2018
 03. Favorites ou Software
 		Software Update
-			Check Package Update
+			Check for Package Updates
 			Install Package Update
 
+Documentação do Licenciamento: https://docs.software-univention.de/manual-5.0.html#central:license
 Terceira etapa: Licenciando o UCS Univention
 01. Acessar o WebManagement (recomendado utilizar o navegado Firefox)
 		https://172.16.1.10
@@ -48,8 +52,9 @@ Terceira etapa: Licenciando o UCS Univention
 		Password: pti@2021
 03. Favorites
 		Welcome!
-			Everything worked great <Next>
-			Enable one-time statistic on hardware configuration <Next>
-			Upload License File... <Next>
-			Further information <Next>
-			Completion of startup wizard: <Finish>
+			Import a License
+				Import from file...
+					ucs.license <Abrir>
+				<Ok>
+			License info
+				<Close>
