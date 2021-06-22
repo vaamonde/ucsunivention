@@ -54,7 +54,7 @@ Link da vídeo aula:
 
 Link do script utilizado nesse vídeo: https://github.com/vaamonde/ucsunivention/blob/master/etapas/Etapa-001-InstalacaoDoUcsUnivention-5.0.txt
 
-## **#001_ Atualização e Licenciamento do UCS Univention Core Free 5.0**
+## **#002_ Atualização e Licenciamento do UCS Univention Core Free 5.0**
 
 Vídeo mostrando os procedimentos básicos para atualizar e licenciar o UCS Univenton Core Free 5.0.x no VirtualBOX. 
 
