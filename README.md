@@ -60,8 +60,34 @@ Vídeo mostrando os procedimentos básicos para atualizar e licenciar o UCS Univ
 
 Existem duas maneiras de atualizar os sistemas UCS; tanto em sistemas individuais (via atualização de software do módulo UMC ou linha de comando) ou via política de computador para grupos maiores de sistemas UCS.
 
+O UCS Core Edition é gratuito, ele está sujeito às condições de licenciamento estabelecidas conforme descrito no site, os usuários de uma licença “gratuita para uso pessoal” existente, que até agora abrangeu apenas 50 usuários e clientes, podem facilmente mudar para o UCS Core Edition com algumas etapas descritas no site do Univention.
+
 [![Atualização e Licenciamento](http://img.youtube.com/vi//0.jpg)]( "Atualização e Licenciamento")
 
 Link da vídeo aula: 
 
 Link do script utilizado nesse vídeo: https://github.com/vaamonde/ucsunivention/blob/master/etapas/Etapa-002-AtualizacaoDoUcsUnivention-5.0.txt
+
+## **#003_ Instalação do Admin Diary do UCS Univention Core Free 5.0**
+
+Vídeo mostrando os procedimentos básicos para instalar e configurar o App Admin Diary no UCS Univenton Core Free 5.0.x no VirtualBOX. 
+
+O Diário do Administrador oferece aos administradores uma visão geral rápida dos eventos administrativos em um domínio UCS. Ele está registrando ações específicas do domínio UCS, como a criação e modificação de objetos no serviço de diretório, a instalação ou atualização de um aplicativo, bem como associações de domínio e atualizações de sistemas UCS.
+
+[![Atualização e Licenciamento](http://img.youtube.com/vi//0.jpg)]( "Atualização e Licenciamento")
+
+Link da vídeo aula: 
+
+Link do script utilizado nesse vídeo: https://github.com/vaamonde/ucsunivention/blob/master/etapas/Etapa-003-InstalacaoDoAdminDiaryNoUcsUnivention-5.0.txt
+
+## **#004_ Instalação do DHCP Server do UCS Univention Core Free 5.0**
+
+Vídeo mostrando os procedimentos básicos para instalar e configurar o App DHCP Server no UCS Univenton Core Free 5.0.x no VirtualBOX. 
+
+O DHCP Server é um serviço de gerenciamento de IP dinâmico para redes IPv4. É configurável de forma flexível e administra até mesmo grandes redes de forma confiável. Durante a configuração, você tem a possibilidade de decidir se os endereços IP devem ser atribuídos dinamicamente ou fixos. Ao especificar o endereço MAC, os sistemas podem ser atribuídos a um endereço IP fixo e isso permite que você exclua sistemas de terceiros.
+
+[![Atualização e Licenciamento](http://img.youtube.com/vi//0.jpg)]( "Atualização e Licenciamento")
+
+Link da vídeo aula: 
+
+Link do script utilizado nesse vídeo: https://github.com/vaamonde/ucsunivention/blob/master/etapas/Etapa-004-InstalacaoDoDHCPServerNoUcsUnivention-5.0.txt
