@@ -48,9 +48,9 @@ Vídeo mostrando os procedimentos básicos para instalar a VERSÃO OFICIAL do UC
 
 A quinta versão principal do Univention Corporate Server está pronta e disponível para download. UCS 5.0 contém novos recursos, tem uma aparência nova, vem com várias melhorias e correções de bugs. A nova versão também usa um novo núcleo: UCS 5.0 é baseado em Debian 10 (“Buster”) e Python 3.
 
-[![UCS Core Free 5.0](http://img.youtube.com/vi//0.jpg)]( "UCS Core Free 5.0")
+[![UCS Core Free 5.0](http://img.youtube.com/vi/Kv9U5kpGGfo/0.jpg)](https://www.youtube.com/watch?v=Kv9U5kpGGfo "UCS Core Free 5.0")
 
-Link da vídeo aula: 
+Link da vídeo aula: https://www.youtube.com/watch?v=Kv9U5kpGGfo
 
 Link do script utilizado nesse vídeo: https://github.com/vaamonde/ucsunivention/blob/master/etapas/Etapa-001-InstalacaoDoUcsUnivention-5.0.txt
 
@@ -62,9 +62,9 @@ Existem duas maneiras de atualizar os sistemas UCS; tanto em sistemas individuai
 
 O UCS Core Edition é gratuito, ele está sujeito às condições de licenciamento estabelecidas conforme descrito no site, os usuários de uma licença “gratuita para uso pessoal” existente, que até agora abrangeu apenas 50 usuários e clientes, podem facilmente mudar para o UCS Core Edition com algumas etapas descritas no site do Univention.
 
-[![Atualização e Licenciamento](http://img.youtube.com/vi//0.jpg)]( "Atualização e Licenciamento")
+[![Atualização e Licenciamento](http://img.youtube.com/vi/xjo7jLF-Vtw/0.jpg)](https://www.youtube.com/watch?v=xjo7jLF-Vtw "Atualização e Licenciamento")
 
-Link da vídeo aula: 
+Link da vídeo aula: https://www.youtube.com/watch?v=xjo7jLF-Vtw
 
 Link do script utilizado nesse vídeo: https://github.com/vaamonde/ucsunivention/blob/master/etapas/Etapa-002-AtualizacaoDoUcsUnivention-5.0.txt
 
@@ -74,9 +74,9 @@ Vídeo mostrando os procedimentos básicos para instalar e configurar o App Admi
 
 O Diário do Administrador oferece aos administradores uma visão geral rápida dos eventos administrativos em um domínio UCS. Ele está registrando ações específicas do domínio UCS, como a criação e modificação de objetos no serviço de diretório, a instalação ou atualização de um aplicativo, bem como associações de domínio e atualizações de sistemas UCS.
 
-[![Atualização e Licenciamento](http://img.youtube.com/vi//0.jpg)]( "Atualização e Licenciamento")
+[![Atualização e Licenciamento](http://img.youtube.com/vi/SXviYlS_Zwo/0.jpg)](https://www.youtube.com/watch?v=SXviYlS_Zwo "Atualização e Licenciamento")
 
-Link da vídeo aula: 
+Link da vídeo aula: https://www.youtube.com/watch?v=SXviYlS_Zwo
 
 Link do script utilizado nesse vídeo: https://github.com/vaamonde/ucsunivention/blob/master/etapas/Etapa-003-InstalacaoDoAdminDiaryNoUcsUnivention-5.0.txt
 
@@ -86,8 +86,8 @@ Vídeo mostrando os procedimentos básicos para instalar e configurar o App DHCP
 
 O DHCP Server é um serviço de gerenciamento de IP dinâmico para redes IPv4. É configurável de forma flexível e administra até mesmo grandes redes de forma confiável. Durante a configuração, você tem a possibilidade de decidir se os endereços IP devem ser atribuídos dinamicamente ou fixos. Ao especificar o endereço MAC, os sistemas podem ser atribuídos a um endereço IP fixo e isso permite que você exclua sistemas de terceiros.
 
-[![Atualização e Licenciamento](http://img.youtube.com/vi//0.jpg)]( "Atualização e Licenciamento")
+[![Atualização e Licenciamento](http://img.youtube.com/vi/ZRvjXHbg_K8/0.jpg)](https://www.youtube.com/watch?v=ZRvjXHbg_K8 "Atualização e Licenciamento")
 
-Link da vídeo aula: 
+Link da vídeo aula: https://www.youtube.com/watch?v=ZRvjXHbg_K8
 
 Link do script utilizado nesse vídeo: https://github.com/vaamonde/ucsunivention/blob/master/etapas/Etapa-004-InstalacaoDoDHCPServerNoUcsUnivention-5.0.txt
