@@ -16,6 +16,8 @@ Atualização do UCS: https://docs.software-univention.de/quickstart-en-5.0.html
 Manual do UCS: https://docs.software-univention.de/manual-5.0.html
 
 Documentação do Admin Diary: https://docs.software-univention.de/manual-5.0.html#domain-ldap:adminndiary:list
+Artigo sobre o Admin Diary: https://www.univention.com/blog-en/2019/05/journaling-for-sysadmins-admin-diary/
+
 
 Primeira etapa: Instalando o Admin Diary via WebManagement App
 01. Acessar o WebManagement (recomendado utilizar o navegado Firefox)

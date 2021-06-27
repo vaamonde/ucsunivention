@@ -38,7 +38,7 @@ Primeira etapa: Download da ISO do UCS Univention Core Free:
 01. Link Oficial da Versão 5.0.x: https://www.univention.com/downloads/download-ucs/
 02. Documentação Oficial da Versão 5.0.x: https://docs.software-univention.de/index.html.en
 
-UCS Univention Performance guide: https://docs.software-univention.de/performance-guide-4.2.pdf
+UCS Univention Performance guide: https://docs.software-univention.de/performance-guide-5.0.pdf
 
 Segunda etapa: Criação e Configuração da Máquina Virtual no Oracle VirtualBOX
 01. Ferramentas;
