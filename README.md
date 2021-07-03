@@ -74,7 +74,7 @@ Vídeo mostrando os procedimentos básicos para instalar e configurar o App Admi
 
 O Diário do Administrador oferece aos administradores uma visão geral rápida dos eventos administrativos em um domínio UCS. Ele está registrando ações específicas do domínio UCS, como a criação e modificação de objetos no serviço de diretório, a instalação ou atualização de um aplicativo, bem como associações de domínio e atualizações de sistemas UCS.
 
-[![Atualização e Licenciamento](http://img.youtube.com/vi/SXviYlS_Zwo/0.jpg)](https://www.youtube.com/watch?v=SXviYlS_Zwo "Atualização e Licenciamento")
+[![Admin Diary](http://img.youtube.com/vi/SXviYlS_Zwo/0.jpg)](https://www.youtube.com/watch?v=SXviYlS_Zwo "Admin Diary")
 
 Link da vídeo aula: https://www.youtube.com/watch?v=SXviYlS_Zwo
 
@@ -86,8 +86,20 @@ Vídeo mostrando os procedimentos básicos para instalar e configurar o App DHCP
 
 O DHCP Server é um serviço de gerenciamento de IP dinâmico para redes IPv4. É configurável de forma flexível e administra até mesmo grandes redes de forma confiável. Durante a configuração, você tem a possibilidade de decidir se os endereços IP devem ser atribuídos dinamicamente ou fixos. Ao especificar o endereço MAC, os sistemas podem ser atribuídos a um endereço IP fixo e isso permite que você exclua sistemas de terceiros.
 
-[![Atualização e Licenciamento](http://img.youtube.com/vi/ZRvjXHbg_K8/0.jpg)](https://www.youtube.com/watch?v=ZRvjXHbg_K8 "Atualização e Licenciamento")
+[![DHCP Server](http://img.youtube.com/vi/ZRvjXHbg_K8/0.jpg)](https://www.youtube.com/watch?v=ZRvjXHbg_K8 "DHCP Server")
 
 Link da vídeo aula: https://www.youtube.com/watch?v=ZRvjXHbg_K8
 
 Link do script utilizado nesse vídeo: https://github.com/vaamonde/ucsunivention/blob/master/etapas/Etapa-004-InstalacaoDoDHCPServerNoUcsUnivention-5.0.txt
+
+## **#005_ Configurações Gerais do UCS Univention Core Free 5.0**
+
+Vídeo mostrando os procedimentos básicos das configurações gerais do Servidor UCS antes de instalar e configurar o SAMBA-4 par fazer a função do Active Directory Domain Service no UCS Univenton Core Free 5.0.x no VirtualBOX. 
+
+As configurações gerais de: Data, Hora Locale são fundamentais para o bom funcionamento do servidor e principalmente para o sincronismo entre o servidor e clientes na hora em relação ao Protocolo Kerberos, LDAP e quando for instalado e configurado o Serviço de Active Directory Domain Service utilizando o SAMBA-4, também será configurado o NTP Server de forma correta e demais configurações serão feitas utilizando o WebConfigurator para facilitar e admiistração e analise de falhas do servidor.
+
+[![Configurações Gerais](http://img.youtube.com/vi//0.jpg)]( "Configurações Gerais")
+
+Link da vídeo aula: 
+
+Link do script utilizado nesse vídeo: https://github.com/vaamonde/ucsunivention/blob/master/etapas/Etapa-005-ConfiguracaoesGeraisNoUcsUnivention.txt
