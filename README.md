@@ -98,8 +98,8 @@ Vídeo mostrando os procedimentos básicos das configurações gerais do Servido
 
 As configurações gerais de: Data, Hora Locale são fundamentais para o bom funcionamento do servidor e principalmente para o sincronismo entre o servidor e clientes na hora em relação ao Protocolo Kerberos, LDAP e quando for instalado e configurado o Serviço de Active Directory Domain Service utilizando o SAMBA-4, também será configurado o NTP Server de forma correta e demais configurações serão feitas utilizando o WebConfigurator para facilitar e admiistração e analise de falhas do servidor.
 
-[![Configurações Gerais](http://img.youtube.com/vi//0.jpg)]( "Configurações Gerais")
+[![Configurações Gerais](http://img.youtube.com/vi/f2fU3dhfULQ/0.jpg)](https://www.youtube.com/watch?v=f2fU3dhfULQ "Configurações Gerais")
 
-Link da vídeo aula: 
+Link da vídeo aula: https://www.youtube.com/watch?v=f2fU3dhfULQ
 
 Link do script utilizado nesse vídeo: https://github.com/vaamonde/ucsunivention/blob/master/etapas/Etapa-005-ConfiguracaoesGeraisNoUcsUnivention.txt
