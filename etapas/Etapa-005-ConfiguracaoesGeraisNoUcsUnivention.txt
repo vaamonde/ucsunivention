@@ -31,7 +31,10 @@ Primeira etapa: Configuração da Data e Hora do Servidor UCS
 		ntpq
 			pe (--peers)
 			exit
+		systemctl stop ntp.service
+		ntpdate -s a.st1.ntp.br
 		ntpdate
+		systemctl start ntp.service
 		date
 		timedatectl
 		reboot
