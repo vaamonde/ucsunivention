@@ -37,6 +37,15 @@ Primeira etapa: Configuração da Data e Hora do Servidor UCS
 		systemctl start ntp.service
 		date
 		timedatectl
+
+OBSERVAÇÃO: devido o UCS Univention utilizar o sistema Systemd, é necessário fazer a configuração 
+do arquivo: timesyncd.conf, no vídeo não foi mostrado essa configuração, segue o procedimento para 
+essa configuração utilizando o Terminal e Editor de Texto vim
+		vim /etc/systemd/timesyncd.conf
+			#Descomentar as linhas 15 e 16 e digitar os servidores do ntp.br
+			[Time]
+			NTP=a.st1.ntp.br
+			FallbackNTP=a.ntp.br
 		reboot
 
 Segunda etapa: Configurações Gerais do Servidor UCS
