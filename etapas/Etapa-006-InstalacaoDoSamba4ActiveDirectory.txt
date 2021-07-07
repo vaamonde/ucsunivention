@@ -1,0 +1,89 @@
+Autor: Robson Vaamonde
+Procedimentos em TI: http://procedimentosemti.com.br
+Bora para Prática: http://boraparapratica.com.br
+Robson Vaamonde: http://vaamonde.com.br
+Facebook Procedimentos em TI: https://www.facebook.com/ProcedimentosEmTi
+Facebook Bora para Prática: https://www.facebook.com/BoraParaPratica
+Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem
+YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica
+LinkedIn Robson Vaamonde: https://www.linkedin.com/in/robson-vaamonde-0b029028/
+Data de criação: 07/07/2021
+Data de atualização: 07/07/2021
+Versão: 0.01
+Testado e homologado no UCS Univention Core Free 5.0.x
+
+Atualização do UCS: https://docs.software-univention.de/quickstart-en-5.0.html
+Manual do UCS: https://docs.software-univention.de/manual-5.0.html
+
+Primeira etapa: Configurações Gerais do Servidor UCS
+01. Acessar o WebManagement (recomendado utilizar o navegado Firefox)
+		https://172.16.1.10
+
+02. System and Domain Manager
+		Username: administrator
+		Password: pti@2018
+
+03. Software (Instalação do SAMBA-4 Active Directory Domain Service)
+		App Center
+			Active Directory-compatible Domain Controller
+				Install
+					Start Installation
+			Back to Overview
+
+OBSERVAÇÃO: É RECOMENDADO FAZER O REBOOT DO SERVIDOR PARA VERIFICAR SE O SERVIÇO DO SAMBA-4
+VAI FUNCIONAR CORRETAMENTE NA INICIALIZAÇÃO DO SISTEMA
+
+04. Acessar remotamente o Servidor UCS via SSH
+		ssh root@172.16.1.10
+		reboot
+
+05. Domain (Verificação da Instalação do SAMBA-4)
+		Admin Diary
+
+06. Domain (Verificação dos Registros do LDAP do SAMBA-4)
+		LDAP Directory
+
+07. Users (Verificação dos Grupos padrão do SAMBA-4)
+		Groups
+
+08. System (Verificação da Saúde do Servidor e do SAMBA-4)
+		System diagnostic
+
+09. System (Verificação do Serviço do SAMBA-4)
+		System services
+			Search: samba
+
+10. Verificação das informações detalhadas do SAMBA-4 via Bash/Shell
+		ssh root@172.16.1.10
+			a) verificando o serviço do SAMBA-4: systemctl status samba-ad-dc.service
+			b) verificando a versão do SAMBA-4: samba -V
+			c) verificando informações do Domínio do SAMBA-4: samba-tool domain info pti.intra
+			d) verificando o nível funcional do Domínio do SAMBA-4: samba-tool domain level show
+			e) verificando informações do FSMO do Domínio do SAMBA-4: samba-tool fsmo show
+			f) verificando a data e hora do Domínio do SAMBA-4: samba-tool time
+			g) verificando a Zona de Pesquisa Direta do Domínio do SAMBA-4: samba-tool dns zonelist pti.intra -U administrator --password=pti@2018
+			h) verificando a Zona de Pesquisa Reversa do Domínio do SAMBA-4: samba-tool dns zonelist pti.intra --reverse -U administrator --password=pti@2018
+			i) verificando as resoluções de nome no servidor:	host -t A ptispo01dc01
+																host -t A ptispo01dc01.pti.intra
+																host -t A pti.intra
+																host -t A 172.16.1.10
+			j) verificando as configuração do arquivo do SAMBA-4: samba-tool testparm
+			k) verificando os compartilhamos do Domínio do SAMBA-4: smbclient -L localhost -U%
+			l) verificando os status dos compartilhamos do Domínio do SAMBA-4: smbstatus -v
+			m) verificando os arquivos de configuração do Domínio do SAMBA-4: samba -b
+			n) verificando as informações do LDAP do Domínio do SAMBA-4: net ads info
+
+11. Testando os resoluções de nomes no Microsoft Windows e GNU/Linux
+		nslookup ptispo01dc01
+		nslookup ptispo01dc01.pti.intra
+		nslookup pti.intra
+		nslookup 172.16.1.10
+
+12. Testando o acesso aos compartilhamos no Microsoft Windows e GNU/Linux
+		Microsoft Windows: \\ptispo01dc01
+		GNU/Linux Mint: Gerenciador de Arquivos Nemo;
+							Arquivos
+								Conectar a um servidor
+									Servidor: ptispo01dc01
+									Tipo: Compartilhamento do Windows
+								Conectar
