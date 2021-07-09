@@ -112,8 +112,8 @@ Com o componente nativo “Services for Windows”, UCS oferece serviços compat
 
 Como tal, “Services for Windows” permite o gerenciamento ideal e eficaz de sistemas Microsoft Windows com UCS como o controlador de domínio compatível com Active Directory. Outros aplicativos no Univention App Center permitem a conexão com o Active Directory e a migração simples de domínios AD inteiros.
 
-[![SAMBA-4 Active Directory](http://img.youtube.com/vi//0.jpg)]( "SAMBA-4 Active Directory")
+[![SAMBA-4 Active Directory](http://img.youtube.com/vi/GPJSuCU_2o8/0.jpg)](https://www.youtube.com/watch?v=GPJSuCU_2o8 "SAMBA-4 Active Directory")
 
-Link da vídeo aula: 
+Link da vídeo aula: https://www.youtube.com/watch?v=GPJSuCU_2o8
 
 Link do script utilizado nesse vídeo: https://github.com/vaamonde/ucsunivention/blob/master/etapas/Etapa-006-InstalacaoDoSamba4ActiveDirectory.txt

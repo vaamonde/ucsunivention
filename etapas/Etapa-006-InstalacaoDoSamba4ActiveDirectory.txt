@@ -9,13 +9,17 @@ YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica
 LinkedIn Robson Vaamonde: https://www.linkedin.com/in/robson-vaamonde-0b029028/
 Data de criação: 07/07/2021
 Data de atualização: 09/07/2021
-Versão: 0.03
+Versão: 0.04
 Testado e homologado no UCS Univention Core Free 5.0.x
 
 Atualização do UCS: https://docs.software-univention.de/quickstart-en-5.0.html
 Manual do UCS: https://docs.software-univention.de/manual-5.0.html
 Active Directory UCS: https://www.univention.com/products/ucs/functions/services-windows-samba/
 Active Directory Compatible: https://www.univention.com/products/univention-app-center/app-catalog/samba4/
+Release Notes UCS 5.0: https://docs.software-univention.de/release-notes-5.0-0-en.html
+SAMBA-4 Release: https://www.samba.org/samba/history/
+SAMBA-4 Schema Version: https://wiki.samba.org/index.php/AD_Schema_Version_Support
+SAMBA-4 FSMO: https://dev.tranquil.it/samba/en/samba_fundamentals/about_fsmo.html
 
 Primeira etapa: Configurações Gerais do Servidor UCS
 01. Acessar o WebManagement (recomendado utilizar o navegado Firefox)
@@ -94,6 +98,7 @@ VAI FUNCIONAR CORRETAMENTE NA INICIALIZAÇÃO DO SISTEMA DO UCS UNIVENTION CORE 
 		nslookup ptispo01dc01.pti.intra
 		nslookup pti.intra
 		nslookup 172.16.1.10
+		ping pti.intra
 
 12. Testando o acesso aos compartilhamos no Microsoft Windows e GNU/Linux
 		Microsoft Windows: \\ptispo01dc01
