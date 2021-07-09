@@ -94,12 +94,26 @@ Link do script utilizado nesse vídeo: https://github.com/vaamonde/ucsunivention
 
 ## **#005_ Configurações Gerais do UCS Univention Core Free 5.0**
 
-Vídeo mostrando os procedimentos básicos das configurações gerais do Servidor UCS antes de instalar e configurar o SAMBA-4 par fazer a função do Active Directory Domain Service no UCS Univenton Core Free 5.0.x no VirtualBOX. 
+Vídeo mostrando os procedimentos básicos das configurações gerais do Servidor UCS antes de instalar e configurar o SAMBA-4 para fazer a função do Active Directory Domain Service no UCS Univenton Core Free 5.0.x no VirtualBOX. 
 
-As configurações gerais de: Data, Hora Locale são fundamentais para o bom funcionamento do servidor e principalmente para o sincronismo entre o servidor e clientes na hora em relação ao Protocolo Kerberos, LDAP e quando for instalado e configurado o Serviço de Active Directory Domain Service utilizando o SAMBA-4, também será configurado o NTP Server de forma correta e demais configurações serão feitas utilizando o WebConfigurator para facilitar e admiistração e analise de falhas do servidor.
+As configurações gerais de: Data, Hora Locale são fundamentais para o bom funcionamento do servidor e principalmente para o sincronismo entre o servidor e clientes referente a data e hora em relação ao Protocolos Kerberos, LDAP e quando for instalado e configurado o Serviço de Active Directory Domain Service utilizando o SAMBA-4, também será configurado o NTP Server de forma correta e demais configurações serão feitas utilizando o WebConfigurator para facilitar e admiistração e análise de falhas do servidor.
 
 [![Configurações Gerais](http://img.youtube.com/vi/f2fU3dhfULQ/0.jpg)](https://www.youtube.com/watch?v=f2fU3dhfULQ "Configurações Gerais")
 
 Link da vídeo aula: https://www.youtube.com/watch?v=f2fU3dhfULQ
 
 Link do script utilizado nesse vídeo: https://github.com/vaamonde/ucsunivention/blob/master/etapas/Etapa-005-ConfiguracaoesGeraisNoUcsUnivention.txt
+
+## **#006_ Instalação do SAMBA-4 Active Directory no UCS Univention Core Free 5.0**
+
+Vídeo mostrando os procedimentos básicos para instalar e configurar o SAMBA-4 Active Directory Domain Service no UCS Univenton Core Free 5.0.x no VirtualBOX.
+
+Com o componente nativo “Services for Windows”, UCS oferece serviços compatíveis com Microsoft Active Directory para a administração de sistemas Microsoft Windows (servidores e clientes) incluindo arquivos, impressão e serviços de rede. O UCS pode oferecer os próprios serviços do Active Directory, ser membro de um domínio do Active Directory ou sincronizar objetos entre um domínio do AD e um domínio do UCS.
+
+Como tal, “Services for Windows” permite o gerenciamento ideal e eficaz de sistemas Microsoft Windows com UCS como o controlador de domínio compatível com Active Directory. Outros aplicativos no Univention App Center permitem a conexão com o Active Directory e a migração simples de domínios AD inteiros.
+
+[![SAMBA-4 Active Directory](http://img.youtube.com/vi//0.jpg)]( "SAMBA-4 Active Directory")
+
+Link da vídeo aula: 
+
+Link do script utilizado nesse vídeo: https://github.com/vaamonde/ucsunivention/blob/master/etapas/Etapa-006-InstalacaoDoSamba4ActiveDirectory.txt
