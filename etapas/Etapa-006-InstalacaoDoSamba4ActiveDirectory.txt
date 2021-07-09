@@ -9,7 +9,7 @@ YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica
 LinkedIn Robson Vaamonde: https://www.linkedin.com/in/robson-vaamonde-0b029028/
 Data de criação: 07/07/2021
 Data de atualização: 09/07/2021
-Versão: 0.02
+Versão: 0.03
 Testado e homologado no UCS Univention Core Free 5.0.x
 
 Atualização do UCS: https://docs.software-univention.de/quickstart-en-5.0.html
@@ -57,23 +57,37 @@ VAI FUNCIONAR CORRETAMENTE NA INICIALIZAÇÃO DO SISTEMA DO UCS UNIVENTION CORE 
 
 10. Verificação das informações detalhadas do SAMBA-4 via Bash/Shell
 		ssh root@172.16.1.10
-			a) verificando o serviço do SAMBA-4: systemctl status samba-ad-dc.service
-			b) verificando a versão do SAMBA-4: samba -V
-			c) verificando informações do Domínio do SAMBA-4: samba-tool domain info pti.intra
-			d) verificando o nível funcional do Domínio do SAMBA-4: samba-tool domain level show
-			e) verificando informações do FSMO do Domínio do SAMBA-4: samba-tool fsmo show
-			f) verificando a data e hora do Domínio do SAMBA-4: samba-tool time
-			g) verificando a Zona de Pesquisa Direta do Domínio do SAMBA-4: samba-tool dns zonelist pti.intra -U administrator --password=pti@2018
-			h) verificando a Zona de Pesquisa Reversa do Domínio do SAMBA-4: samba-tool dns zonelist pti.intra --reverse -U administrator --password=pti@2018
-			i) verificando as resoluções de nome no servidor:	host -t A ptispo01dc01
-																host -t A ptispo01dc01.pti.intra
-																host -t A pti.intra
-																host -t A 172.16.1.10
-			j) verificando as configuração do arquivo do SAMBA-4: samba-tool testparm
-			k) verificando os compartilhamos do Domínio do SAMBA-4: smbclient -L localhost -U%
-			l) verificando os status dos compartilhamos do Domínio do SAMBA-4: smbstatus -v
-			m) verificando os arquivos de configuração do Domínio do SAMBA-4: samba -b
-			n) verificando as informações do LDAP do Domínio do SAMBA-4: net ads info
+			a) verificando o serviço do SAMBA-4: 
+				systemctl status samba-ad-dc.service
+			b) verificando a versão do SAMBA-4: 
+				samba -V
+			c) verificando informações do Domínio do SAMBA-4: 
+				samba-tool domain info pti.intra
+			d) verificando o nível funcional do Domínio do SAMBA-4: 
+				samba-tool domain level show
+			e) verificando informações do FSMO do Domínio do SAMBA-4: 
+				samba-tool fsmo show
+			f) verificando a data e hora do Domínio do SAMBA-4: 
+				samba-tool time
+			g) verificando a Zona de Pesquisa Direta do Domínio do SAMBA-4: 
+				samba-tool dns zonelist pti.intra -U administrator --password=pti@2018
+			h) verificando a Zona de Pesquisa Reversa do Domínio do SAMBA-4: 
+				samba-tool dns zonelist pti.intra --reverse -U administrator --password=pti@2018
+			i) verificando as resoluções de nome no servidor:	
+				host -t A ptispo01dc01
+				host -t A ptispo01dc01.pti.intra
+				host -t A pti.intra
+				host -t A 172.16.1.10
+			j) verificando as configuração do arquivo do SAMBA-4: 
+				samba-tool testparm
+			k) verificando os compartilhamos do Domínio do SAMBA-4: 
+				smbclient -L localhost -U%
+			l) verificando os status dos compartilhamos do Domínio do SAMBA-4: 
+				smbstatus -v
+			m) verificando a localização dos arquivos de configuração do Domínio do SAMBA-4: 
+				samba -b
+			n) verificando as informações do LDAP do Domínio do SAMBA-4: 
+				net ads info
 
 11. Testando os resoluções de nomes no Microsoft Windows e GNU/Linux
 		nslookup ptispo01dc01
