@@ -1,4 +1,4 @@
-# Curso GRÁTIS de SAMBA-4 UCS UNIVENTION CORE FREE - Controlador de Domínio Open Source
+# Curso GRÁTIS de SAMBA-4 UCS UNIVENTION CORE FREE - Controlador de Domínio Active Directory Open Source
 
 ## 💰 Ajude o projeto Bora para Prática a continuar fazendo vídeos gratuitos para o Canal, acessando o link de doação do PagSeguro: https://pag.ae/bjlSJcH
 
@@ -96,7 +96,7 @@ Link do script utilizado nesse vídeo: https://github.com/vaamonde/ucsunivention
 
 Vídeo mostrando os procedimentos básicos das configurações gerais do Servidor UCS antes de instalar e configurar o SAMBA-4 para fazer a função do Active Directory Domain Service no UCS Univenton Core Free 5.0.x no VirtualBOX. 
 
-As configurações gerais de: Data, Hora Locale são fundamentais para o bom funcionamento do servidor e principalmente para o sincronismo entre o servidor e clientes referente a data e hora em relação ao Protocolos Kerberos, LDAP e quando for instalado e configurado o Serviço de Active Directory Domain Service utilizando o SAMBA-4, também será configurado o NTP Server de forma correta e demais configurações serão feitas utilizando o WebConfigurator para facilitar e admiistração e análise de falhas do servidor.
+As configurações gerais de: Data, Hora Locale são fundamentais para o bom funcionamento do servidor e principalmente para o sincronismo entre o servidor e clientes referente a data e hora em relação ao Protocolos Kerberos, LDAP e quando for instalado e configurado o Serviço de Active Directory Domain Service utilizando o SAMBA-4, também será configurado o NTP Server de forma correta e demais configurações serão feitas utilizando o WebConfigurator para facilitar e administração e análise de falhas do servidor.
 
 [![Configurações Gerais](http://img.youtube.com/vi/f2fU3dhfULQ/0.jpg)](https://www.youtube.com/watch?v=f2fU3dhfULQ "Configurações Gerais")
 
