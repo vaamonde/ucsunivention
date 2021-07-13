@@ -117,3 +117,27 @@ Como tal, “Services for Windows” permite o gerenciamento ideal e eficaz de s
 Link da vídeo aula: https://www.youtube.com/watch?v=GPJSuCU_2o8
 
 Link do script utilizado nesse vídeo: https://github.com/vaamonde/ucsunivention/blob/master/etapas/Etapa-006-InstalacaoDoSamba4ActiveDirectory.txt
+
+## **#007_ Ingressando o Microsoft Windows Desktop no Domínio do UCS Univention Core Free 5.0**
+
+Vídeo mostrando os procedimentos básicos para ingressar computadores rodando o Microsoft Windows Desktop (Windows XP, Windows 7, Windows 10 e Windows 11) no Domínio do SAMBA-4 Active Directory Domain Service do UCS Univenton Core Free 5.0.x no VirtualBOX.
+
+Os procedimentos para adicionar máquinas ao domínio é praticamente igual em todas as versões do Microsoft Windows desde a versão 2000 Professional até a versão 11. Observação importante: Vale lembrar que as versões home não ingressam no domínio, devido não possuir suporte para redes corporativas, as versões mais utilizadas nas organizações são: Microsoft Windows 10 Pro ou Enterprise.
+
+[![Windows Desktop no Domínio](http://img.youtube.com/vi//0.jpg)]( "Windows Desktop no Domínio")
+
+Link da vídeo aula: 
+
+Link do script utilizado nesse vídeo: https://github.com/vaamonde/ucsunivention/blob/master/etapas/Etapa-007-IngressandoMicrosoftWindowsDesktop.txt
+
+## **#008_ Ingressando o Microsoft Windows Server no Domínio do UCS Univention Core Free 5.0**
+
+Vídeo mostrando os procedimentos básicos para ingressar computadores rodando o Microsoft Windows Server (2008 R2, 2012 R2, 2016 e 2019) no Domínio do SAMBA-4 Active Directory Domain Service do UCS Univenton Core Free 5.0.x no VirtualBOX.
+
+Microsoft Windows Server é uma família de sistemas operacionais Microsoft Windows baseado na arquitetura NT direcionada para uso em servidores, quando ingressamos servidores em nosso domínio denominamos como Membro de Domínio, com isso conseguimos aplicar todas as politicas de acesso e integrações de serviços utilizando os recursos de GPO/GPP ou regras de permissões de usuários ou grupos do SAMBA-4 Active Directory rodando no UCS.
+
+[![Windows Server no Domínio](http://img.youtube.com/vi//0.jpg)]( "Windows Server no Domínio")
+
+Link da vídeo aula: 
+
+Link do script utilizado nesse vídeo: 

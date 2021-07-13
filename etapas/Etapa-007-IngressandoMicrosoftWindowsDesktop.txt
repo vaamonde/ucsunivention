@@ -1,0 +1,84 @@
+Autor: Robson Vaamonde
+Procedimentos em TI: http://procedimentosemti.com.br
+Bora para Prática: http://boraparapratica.com.br
+Robson Vaamonde: http://vaamonde.com.br
+Facebook Procedimentos em TI: https://www.facebook.com/ProcedimentosEmTi
+Facebook Bora para Prática: https://www.facebook.com/BoraParaPratica
+Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem
+YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica
+LinkedIn Robson Vaamonde: https://www.linkedin.com/in/robson-vaamonde-0b029028/
+Data de criação: 13/07/2021
+Data de atualização: 13/07/2021
+Versão: 0.01
+Testado e homologado no UCS Univention Core Free 5.0.x
+
+Atualização do UCS: https://docs.software-univention.de/quickstart-en-5.0.html
+Manual do UCS: https://docs.software-univention.de/manual-5.0.html
+Active Directory UCS: https://www.univention.com/products/ucs/functions/services-windows-samba/
+Active Directory Compatible: https://www.univention.com/products/univention-app-center/app-catalog/samba4/
+Release Notes UCS 5.0: https://docs.software-univention.de/release-notes-5.0-0-en.html
+
+Primeira etapa: Ingressando o Microsoft Windows XP no Domínio UCS
+		hostname
+		ipconfig /all
+		nslookup pti.intra
+		ping pti.intra
+		Botão direito do mouse em cima do ícone: Meu Computador, selecionar: Propriedades
+			Propriedades do Sistema
+				Nome do Computador
+					Descrição do Computador: Desktop Windows XP
+					Alterar
+						Membro de: 
+							Domínio: pti.intra
+							Usuário: administrator
+							Senha: pti@2018
+
+Segunda etapa: Ingressando o Microsoft Windows 7 no Domínio UCS
+		hostname
+		ipconfig /all
+		nslookup pti.intra
+		ping pti.intra
+		Botão direito do mouse em cima do ícone: Meu Computador, selecionar: Propriedades
+			Nome do computador, domínio, e configurações de grupos de trabalho
+				Alterar Configurações
+					Nome do Computador
+						Descrição do Computador: Desktop Windows 7
+						Alterar
+							Membro de: 
+								Domínio: pti.intra
+								Usuário: administrator
+								Senha: pti@2018
+
+Terceira etapa: Ingressando o Microsoft Windows 10 no Domínio UCS
+		hostname
+		ipconfig /all
+		nslookup pti.intra
+		ping pti.intra
+		Explorar de Arquivos
+			Botão direito do mouse em cima do ícone: Este Computador, selecionar: Propriedades
+				Nome do computador, domínio, e configurações de grupos de trabalho
+					Alterar Configurações
+						Nome do Computador
+							Descrição do Computador: Desktop Windows 10
+							Alterar
+								Membro de: 
+									Domínio: pti.intra
+									Usuário: administrator
+									Senha: pti@2018
+
+Quarta etapa: Ingressando o Microsoft Windows 11 no Domínio UCS
+		hostname
+		ipconfig /all
+		nslookup pti.intra
+		ping pti.intra
+		Explorar de Arquivos
+			Botão direito do mouse em cima do ícone: Este Computador, selecionar: Propriedades
+				Sobre
+					Renomear esse computador
+						Nome do Computador
+							Descrição do Computador: Desktop Windows 11
+							Alterar
+								Membro de: 
+									Domínio: pti.intra
+									Usuário: administrator
+									Senha: pti@2018
