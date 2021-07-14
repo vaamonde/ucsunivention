@@ -19,19 +19,14 @@ Active Directory Compatible: https://www.univention.com/products/univention-app-
 Release Notes UCS 5.0: https://docs.software-univention.de/release-notes-5.0-0-en.html
 
 Primeira etapa: Ingressando o Microsoft Windows XP no Domínio UCS
-		hostname
-		ipconfig /all
-		nslookup pti.intra
-		ping pti.intra
-		Botão direito do mouse em cima do ícone: Meu Computador, selecionar: Propriedades
-			Propriedades do Sistema
-				Nome do Computador
-					Descrição do Computador: Desktop Windows XP
-					Alterar
-						Membro de: 
-							Domínio: pti.intra
-							Usuário: administrator
-							Senha: pti@2018
+
+OBSERVAÇÃO IMPORTANTE: SMB1 está desabilitado por padrão. O padrão do protocolo de server min dos 
+parâmetros do smb.conf foi aumentado de NT1 para SMB2_02. Isso significa que os clientes sem suporte 
+para SMB2 ou SMB3 não podem mais se conectar ao smbd (por padrão). Isso também significa que ferramentas
+de cliente como smbclient e outras não são mais capazes de se conectar a servidores sem suporte a SMB2 
+ou SMB3 (por padrão). Como a Microsoft não instala mais o suporte SMB1 em lançamentos recentes ou o 
+desinstala após 30 dias sem uso, a equipe do SAMBA tenta remover o uso do SMB1 o máximo possível. SMB1 
+está oficialmente obsoleto e pode ser removido passo a passo nos próximos anos. 
 
 Segunda etapa: Ingressando o Microsoft Windows 7 no Domínio UCS
 		hostname
