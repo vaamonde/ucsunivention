@@ -32,7 +32,7 @@ Link do Palylist: https://www.youtube.com/playlist?list=PLozhsZB1lLUMFKPS3riNX-0
 
 ## **COMO instalar o UCS Univention Core Free 5.0 RC0 no VirtualBOX**
 
-Vídeo mostrando os procedimentos básicos para instalar a NOVA VERSÃO do UCS Univenton Core Free 5.0.x Release Candidate RC0 no VirtualBOX. 
+Vídeo mostrando os procedimentos básicos para instalar a NOVA VERSÃO do UCS Univention Core Free 5.0.x Release Candidate RC0 no VirtualBOX. 
 
 A solução UCS Univention Corporate Server foi criada para facilitar a instalação e implementação do SAMBA-4 Active Directory Domain Service Open Source em redes corporativas de Pequeno, Médio e até Grande Porte, ela foi criada principalmente para ajudar os Administradores de Redes que nunca trabalhou com GNU/Linux antes, todo o processo de instalação e configuração e feito 100% em modo Gráfico e com compatibilidade total em redes heterogênicas.
 
@@ -44,7 +44,7 @@ Link do script utilizado nesse vídeo: https://github.com/vaamonde/ucsunivention
 
 ## **#001_ Instalação do UCS Univention Core Free 5.0**
 
-Vídeo mostrando os procedimentos básicos para instalar a VERSÃO OFICIAL do UCS Univenton Core Free 5.0.x no VirtualBOX. 
+Vídeo mostrando os procedimentos básicos para instalar a VERSÃO OFICIAL do UCS Univention Core Free 5.0.x no VirtualBOX. 
 
 A quinta versão principal do Univention Corporate Server está pronta e disponível para download. UCS 5.0 contém novos recursos, tem uma aparência nova, vem com várias melhorias e correções de bugs. A nova versão também usa um novo núcleo: UCS 5.0 é baseado em Debian 10 (“Buster”) e Python 3.
 
@@ -56,7 +56,7 @@ Link do script utilizado nesse vídeo: https://github.com/vaamonde/ucsunivention
 
 ## **#002_ Atualização e Licenciamento do UCS Univention Core Free 5.0**
 
-Vídeo mostrando os procedimentos básicos para atualizar e licenciar o UCS Univenton Core Free 5.0.x no VirtualBOX. 
+Vídeo mostrando os procedimentos básicos para atualizar e licenciar o UCS Univention Core Free 5.0.x no VirtualBOX. 
 
 Existem duas maneiras de atualizar os sistemas UCS; tanto em sistemas individuais (via atualização de software do módulo UMC ou linha de comando) ou via política de computador para grupos maiores de sistemas UCS.
 
@@ -70,7 +70,7 @@ Link do script utilizado nesse vídeo: https://github.com/vaamonde/ucsunivention
 
 ## **#003_ Instalação do Admin Diary do UCS Univention Core Free 5.0**
 
-Vídeo mostrando os procedimentos básicos para instalar e configurar o App Admin Diary no UCS Univenton Core Free 5.0.x no VirtualBOX. 
+Vídeo mostrando os procedimentos básicos para instalar e configurar o App Admin Diary no UCS Univention Core Free 5.0.x no VirtualBOX. 
 
 O Diário do Administrador oferece aos administradores uma visão geral rápida dos eventos administrativos em um domínio UCS. Ele está registrando ações específicas do domínio UCS, como a criação e modificação de objetos no serviço de diretório, a instalação ou atualização de um aplicativo, bem como associações de domínio e atualizações de sistemas UCS.
 
@@ -82,7 +82,7 @@ Link do script utilizado nesse vídeo: https://github.com/vaamonde/ucsunivention
 
 ## **#004_ Instalação do DHCP Server do UCS Univention Core Free 5.0**
 
-Vídeo mostrando os procedimentos básicos para instalar e configurar o App DHCP Server no UCS Univenton Core Free 5.0.x no VirtualBOX. 
+Vídeo mostrando os procedimentos básicos para instalar e configurar o App DHCP Server no UCS Univention Core Free 5.0.x no VirtualBOX. 
 
 O DHCP Server é um serviço de gerenciamento de IP dinâmico para redes IPv4. É configurável de forma flexível e administra até mesmo grandes redes de forma confiável. Durante a configuração, você tem a possibilidade de decidir se os endereços IP devem ser atribuídos dinamicamente ou fixos. Ao especificar o endereço MAC, os sistemas podem ser atribuídos a um endereço IP fixo e isso permite que você exclua sistemas de terceiros.
 
@@ -94,7 +94,7 @@ Link do script utilizado nesse vídeo: https://github.com/vaamonde/ucsunivention
 
 ## **#005_ Configurações Gerais do UCS Univention Core Free 5.0**
 
-Vídeo mostrando os procedimentos básicos das configurações gerais do Servidor UCS antes de instalar e configurar o SAMBA-4 para fazer a função do Active Directory Domain Service no UCS Univenton Core Free 5.0.x no VirtualBOX. 
+Vídeo mostrando os procedimentos básicos das configurações gerais do Servidor UCS antes de instalar e configurar o SAMBA-4 para fazer a função do Active Directory Domain Service no UCS Univention Core Free 5.0.x no VirtualBOX. 
 
 As configurações gerais de: Data, Hora Locale são fundamentais para o bom funcionamento do servidor e principalmente para o sincronismo entre o servidor e clientes referente a data e hora em relação ao Protocolos Kerberos, LDAP e quando for instalado e configurado o Serviço de Active Directory Domain Service utilizando o SAMBA-4, também será configurado o NTP Server de forma correta e demais configurações serão feitas utilizando o WebConfigurator para facilitar e administração e análise de falhas do servidor.
 
@@ -106,7 +106,7 @@ Link do script utilizado nesse vídeo: https://github.com/vaamonde/ucsunivention
 
 ## **#006_ Instalação do SAMBA-4 Active Directory no UCS Univention Core Free 5.0**
 
-Vídeo mostrando os procedimentos básicos para instalar e configurar o SAMBA-4 Active Directory Domain Service no UCS Univenton Core Free 5.0.x no VirtualBOX.
+Vídeo mostrando os procedimentos básicos para instalar e configurar o SAMBA-4 Active Directory Domain Service no UCS Univention Core Free 5.0.x no VirtualBOX.
 
 Com o componente nativo “Services for Windows”, UCS oferece serviços compatíveis com Microsoft Active Directory para a administração de sistemas Microsoft Windows (servidores e clientes) incluindo arquivos, impressão e serviços de rede. O UCS pode oferecer os próprios serviços do Active Directory, ser membro de um domínio do Active Directory ou sincronizar objetos entre um domínio do AD e um domínio do UCS.
 
@@ -120,24 +120,26 @@ Link do script utilizado nesse vídeo: https://github.com/vaamonde/ucsunivention
 
 ## **#007_ Ingressando o Microsoft Windows Desktop no Domínio do UCS Univention Core Free 5.0**
 
-Vídeo mostrando os procedimentos básicos para ingressar computadores rodando o Microsoft Windows Desktop (Windows XP, Windows 7, Windows 10 e Windows 11) no Domínio do SAMBA-4 Active Directory Domain Service do UCS Univenton Core Free 5.0.x no VirtualBOX.
+Vídeo mostrando os procedimentos básicos para ingressar computadores rodando o Microsoft Windows Desktop (Windows XP, Windows 7, Windows 10 e novo Windows 11) no Domínio do SAMBA-4 Active Directory Domain Service do UCS Univention Core Free 5.0.x no VirtualBOX.
 
 Os procedimentos para adicionar máquinas ao domínio é praticamente igual em todas as versões do Microsoft Windows desde a versão 2000 Professional até a versão 11. Observação importante: Vale lembrar que as versões home não ingressam no domínio, devido não possuir suporte para redes corporativas, as versões mais utilizadas nas organizações são: Microsoft Windows 10 Pro ou Enterprise.
 
-[![Windows Desktop no Domínio](http://img.youtube.com/vi//0.jpg)]( "Windows Desktop no Domínio")
+[![Windows Desktop no Domínio](http://img.youtube.com/vi/pqwoSevBMlI/0.jpg)](https://www.youtube.com/watch?v=pqwoSevBMlI "Windows Desktop no Domínio")
 
-Link da vídeo aula: 
+Link da vídeo aula: https://www.youtube.com/watch?v=pqwoSevBMlI
 
 Link do script utilizado nesse vídeo: https://github.com/vaamonde/ucsunivention/blob/master/etapas/Etapa-007-IngressandoMicrosoftWindowsDesktop.txt
 
 ## **#008_ Ingressando o Microsoft Windows Server no Domínio do UCS Univention Core Free 5.0**
 
-Vídeo mostrando os procedimentos básicos para ingressar computadores rodando o Microsoft Windows Server (2008 R2, 2012 R2, 2016 e 2019) no Domínio do SAMBA-4 Active Directory Domain Service do UCS Univenton Core Free 5.0.x no VirtualBOX.
+Vídeo mostrando os procedimentos básicos para ingressar computadores rodando o Microsoft Windows Server (2008 R2, 2012 R2, 2016 e 2019) no Domínio do SAMBA-4 Active Directory Domain Service do UCS Univention Core Free 5.0.x no VirtualBOX.
 
 Microsoft Windows Server é uma família de sistemas operacionais Microsoft Windows baseado na arquitetura NT direcionada para uso em servidores, quando ingressamos servidores em nosso domínio denominamos como Membro de Domínio, com isso conseguimos aplicar todas as politicas de acesso e integrações de serviços utilizando os recursos de GPO/GPP ou regras de permissões de usuários ou grupos do SAMBA-4 Active Directory rodando no UCS.
+
+Os procedimentos para adicionar máquinas ao domínio é praticamente igual em todas as versões do Microsoft Windows Server desde a versão 2000 até a versão 2019.
 
 [![Windows Server no Domínio](http://img.youtube.com/vi//0.jpg)]( "Windows Server no Domínio")
 
 Link da vídeo aula: 
 
-Link do script utilizado nesse vídeo: 
+Link do script utilizado nesse vídeo: https://github.com/vaamonde/ucsunivention/blob/master/etapas/Etapa-008-IngressandoMicrosoftWindowsServer.txt

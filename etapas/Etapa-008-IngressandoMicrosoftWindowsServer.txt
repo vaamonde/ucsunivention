@@ -1,0 +1,95 @@
+Autor: Robson Vaamonde
+Procedimentos em TI: http://procedimentosemti.com.br
+Bora para Prática: http://boraparapratica.com.br
+Robson Vaamonde: http://vaamonde.com.br
+Facebook Procedimentos em TI: https://www.facebook.com/ProcedimentosEmTi
+Facebook Bora para Prática: https://www.facebook.com/BoraParaPratica
+Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem
+YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica
+LinkedIn Robson Vaamonde: https://www.linkedin.com/in/robson-vaamonde-0b029028/
+Data de criação: 14/07/2021
+Data de atualização: 14/07/2021
+Versão: 0.01
+Testado e homologado no UCS Univention Core Free 5.0.x
+
+Atualização do UCS: https://docs.software-univention.de/quickstart-en-5.0.html
+Manual do UCS: https://docs.software-univention.de/manual-5.0.html
+Active Directory UCS: https://www.univention.com/products/ucs/functions/services-windows-samba/
+Active Directory Compatible: https://www.univention.com/products/univention-app-center/app-catalog/samba4/
+Release Notes UCS 5.0: https://docs.software-univention.de/release-notes-5.0-0-en.html
+
+Primeira etapa: Ingressando o Microsoft Windows Server 2008 R2 no Domínio UCS
+		hostname
+		ipconfig /all
+		nslookup pti.intra
+		ping pti.intra
+		Windows Explorer
+			Botão direito do mouse em cima do ícone: Computer, selecionar: Properties
+				Computer name, domain, and workgroup settings
+					Change settings
+						Computer Name
+							Computer description: Servidor Windows 2008 R2
+							Change
+								Member off: 
+									Domain: pti.intra
+									User: administrator
+									Password: pti@2018
+		gpresult /r
+		\\ptispo01dc01
+
+Segunda etapa: Ingressando o Microsoft Windows Server 2012 R2 no Domínio UCS
+		hostname
+		ipconfig /all
+		nslookup pti.intra
+		ping pti.intra
+		Windows Explorer
+			Botão direito do mouse em cima do ícone: Computer, selecionar: Properties
+				Computer name, domain, and workgroup settings
+					Change settings
+						Computer Name
+							Computer description: Servidor Windows 2012 R2
+							Change
+								Member off: 
+									Domain: pti.intra
+									User: administrator
+									Password: pti@2018
+		gpresult /r
+		\\ptispo01dc01
+
+Terceira etapa: Ingressando o Microsoft Windows Server 2016 no Domínio UCS
+		hostname
+		ipconfig /all
+		nslookup pti.intra
+		ping pti.intra
+		Windows Explorer
+			Botão direito do mouse em cima do ícone: Computer, selecionar: Properties
+				Computer name, domain, and workgroup settings
+					Change settings
+						Computer Name
+							Computer description: Servidor Windows 2016
+							Change
+								Member off: 
+									Domain: pti.intra
+									User: administrator
+									Password: pti@2018
+		gpresult /r
+		\\ptispo01dc01
+
+Quarta etapa: Ingressando o Microsoft Windows Server 2019 no Domínio UCS
+		hostname
+		ipconfig /all
+		nslookup pti.intra
+		ping pti.intra
+		Windows Explorer
+			Botão direito do mouse em cima do ícone: Computer, selecionar: Properties
+				Computer name, domain, and workgroup settings
+					Change settings
+						Computer Name
+							Computer description: Servidor Windows 2019
+							Change
+								Member off: 
+									Domain: pti.intra
+									User: administrator
+									Password: pti@2018
+		gpresult /r
+		\\ptispo01dc01

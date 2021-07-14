@@ -8,7 +8,7 @@ Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem
 YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica
 LinkedIn Robson Vaamonde: https://www.linkedin.com/in/robson-vaamonde-0b029028/
 Data de criação: 13/07/2021
-Data de atualização: 13/07/2021
+Data de atualização: 14/07/2021
 Versão: 0.01
 Testado e homologado no UCS Univention Core Free 5.0.x
 
@@ -43,6 +43,8 @@ Segunda etapa: Ingressando o Microsoft Windows 7 no Domínio UCS
 								Domínio: pti.intra
 								Usuário: administrator
 								Senha: pti@2018
+		gpresult /r
+		\\ptispo01dc01
 
 Terceira etapa: Ingressando o Microsoft Windows 10 no Domínio UCS
 		hostname
@@ -60,6 +62,8 @@ Terceira etapa: Ingressando o Microsoft Windows 10 no Domínio UCS
 									Domínio: pti.intra
 									Usuário: administrator
 									Senha: pti@2018
+		gpresult /r
+		\\ptispo01dc01
 
 Quarta etapa: Ingressando o Microsoft Windows 11 no Domínio UCS
 		hostname
@@ -77,3 +81,5 @@ Quarta etapa: Ingressando o Microsoft Windows 11 no Domínio UCS
 									Domínio: pti.intra
 									Usuário: administrator
 									Senha: pti@2018
+		gpresult /r
+		\\ptispo01dc01
