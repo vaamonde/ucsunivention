@@ -1,4 +1,4 @@
-# Curso GRÁTIS de SAMBA-4 UCS UNIVENTION CORE FREE - Controlador de Domínio Active Directory Open Source
+# Curso GRÁTIS de SAMBA-4 UCS UNIVENTION CORE FREE V5.X - Controlador de Domínio Active Directory Open Source
 
 ## 💰 Ajude o projeto Bora para Prática a continuar fazendo vídeos gratuitos para o Canal, acessando o link de doação do PagSeguro: https://pag.ae/bjlSJcH
 
@@ -12,7 +12,7 @@ Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 LinkedIn Robson Vaamonde: https://www.linkedin.com/in/robson-vaamonde-0b029028/<br>
 
-Univention Corporate Server (UCS) é um sistema operacional de servidor derivado do Debian GNU/Linux com um sistema de gerenciamento integrado para a administração central e multi-plataforma de servidores, serviços, clientes, desktops e usuários, bem como computadores virtualizados operados no UCS. Desde a versão 3.0, Univention também suporta as funções utilizadas em muitas empresas pelo Microsoft Active directory, para a administração dos computadores que funcionam com o Microsoft Windows via a integração do software de código aberto Samba 4. Desde o UCS 3.1, componentes para UCS desenvolvidos por terceiros, que são certificados para UCS, pode ser instalado e integrado através da Univention App Center. 
+Univention Corporate Server (UCS) é um sistema operacional de servidor derivado do GNU/Linux Debian com um sistema de gerenciamento integrado para a administração central e multi-plataforma de servidores, serviços, clientes, desktops e usuários, bem como computadores virtualizados operados no UCS. Desde a versão 3.0, Univention também suporta as funções utilizadas em muitas empresas pelo Microsoft Active directory, para a administração dos computadores que funcionam com o Microsoft Windows via a integração do software de código aberto SAMBA-4. Desde o UCS 3.1, componentes para UCS desenvolvidos por terceiros, que são certificados para UCS, pode ser instalado e integrado através da Univention App Center. 
 
 ## **Links Oficiais do UCS Univention, Debian, Ubuntu, Mint, pfSense, Microsoft e VirtualBOX**
 UCS Univention: https://www.univention.com/products/ucs/<br>
@@ -46,7 +46,7 @@ Link do script utilizado nesse vídeo: https://github.com/vaamonde/ucsunivention
 
 Vídeo mostrando os procedimentos básicos para instalar a VERSÃO OFICIAL do UCS Univention Core Free 5.0.x no VirtualBOX. 
 
-A quinta versão principal do Univention Corporate Server está pronta e disponível para download. UCS 5.0 contém novos recursos, tem uma aparência nova, vem com várias melhorias e correções de bugs. A nova versão também usa um novo núcleo: UCS 5.0 é baseado em Debian 10 (“Buster”) e Python 3.
+A quinta versão principal do UCS Univention Corporate Server Core Free está pronta e disponível para download. UCS v5.0 contém novos recursos, tem uma aparência nova, vem com várias melhorias e correções de bugs. A nova versão também usa um novo núcleo: UCS 5.0 é baseado em Debian 10 (“Buster”) e Python 3.
 
 [![UCS Core Free 5.0](http://img.youtube.com/vi/Kv9U5kpGGfo/0.jpg)](https://www.youtube.com/watch?v=Kv9U5kpGGfo "UCS Core Free 5.0")
 
@@ -122,7 +122,7 @@ Link do script utilizado nesse vídeo: https://github.com/vaamonde/ucsunivention
 
 Vídeo mostrando os procedimentos básicos para ingressar computadores rodando o Microsoft Windows Desktop (Windows XP, Windows 7, Windows 10 e novo Windows 11) no Domínio do SAMBA-4 Active Directory Domain Service do UCS Univention Core Free 5.0.x no VirtualBOX.
 
-Os procedimentos para adicionar máquinas ao domínio é praticamente igual em todas as versões do Microsoft Windows desde a versão 2000 Professional até a versão 11. Observação importante: Vale lembrar que as versões home não ingressam no domínio, devido não possuir suporte para redes corporativas, as versões mais utilizadas nas organizações são: Microsoft Windows 10 Pro ou Enterprise.
+Os procedimentos para adicionar máquinas ao domínio é praticamente igual em todas as versões do Microsoft Windows Desktop desde a versão 2000 Professional até a versão 11. Observação importante: Vale lembrar que as versões Home não ingressam no domínio, devido ao fato de não possuir suporte para redes corporativas, as versões mais utilizadas nas organizações são: Microsoft Windows 10 Pro ou Enterprise.
 
 [![Windows Desktop no Domínio](http://img.youtube.com/vi/pqwoSevBMlI/0.jpg)](https://www.youtube.com/watch?v=pqwoSevBMlI "Windows Desktop no Domínio")
 
@@ -143,3 +143,19 @@ Os procedimentos para adicionar máquinas ao domínio é praticamente igual em t
 Link da vídeo aula: 
 
 Link do script utilizado nesse vídeo: https://github.com/vaamonde/ucsunivention/blob/master/etapas/Etapa-008-IngressandoMicrosoftWindowsServer.txt
+
+## **#009_ Ingressando o MacOS CATALINA 10.15 no Domínio do UCS Univention Core Free 5.0**
+
+Vídeo mostrando os procedimentos básicos para ingressar computadores rodando o macOS da Apple (Catalina, Mojave, High Sierra, Sierra, etc...) no Domínio do SAMBA-4 Active Directory Domain Service do UCS Univention Core Free 5.0.x no VirtualBOX.
+
+macOS (anteriormente chamado de Mac OS X e posteriormente OS X) é um sistema operacional proprietário desenvolvido e distribuído pela Apple Inc. desde 2001 e destinado exclusivamente aos computadores Mac. Dentro do mercado de desktops, laptops e pelo uso da web, é o segundo sistema operacional desktop mais usado, depois do Microsoft Windows.
+
+Os procedimentos para adicionar máquinas ao domínio é praticamente igual em todas as versões do macOS desde a versão 10.0 Cheetah até a versão 11.0 Big Sur.
+
+Para ingressar máquinas MacOS em Controladores de Domínio, tanto do Microsoft Windows Server ou GNU/Linux SAMBA-4 configurados com Active Directory, não é necessário a instalação de qualquer software, o próprio ambiente já está preparado para configurações de Active Directory, LDAP ou NIS.
+
+[![Windows Server no Domínio](http://img.youtube.com/vi//0.jpg)]( "Windows Server no Domínio")
+
+Link da vídeo aula: 
+
+Link do script utilizado nesse vídeo: https://github.com/vaamonde/ucsunivention/blob/master/etapas/Etapa-009-IngressandoMacOS.txt
