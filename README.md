@@ -138,13 +138,13 @@ Microsoft Windows Server é uma família de sistemas operacionais Microsoft Wind
 
 Os procedimentos para adicionar máquinas ao domínio é praticamente igual em todas as versões do Microsoft Windows Server desde a versão 2000 até a versão 2019.
 
-[![Windows Server no Domínio](http://img.youtube.com/vi//0.jpg)]( "Windows Server no Domínio")
+[![Windows Server no Domínio](http://img.youtube.com/vi/NzmytmKLWq0/0.jpg)](https://www.youtube.com/watch?v=NzmytmKLWq0 "Windows Server no Domínio")
 
-Link da vídeo aula: 
+Link da vídeo aula: https://www.youtube.com/watch?v=NzmytmKLWq0
 
 Link do script utilizado nesse vídeo: https://github.com/vaamonde/ucsunivention/blob/master/etapas/Etapa-008-IngressandoMicrosoftWindowsServer.txt
 
-## **#009_ Ingressando o MacOS CATALINA 10.15 no Domínio do UCS Univention Core Free 5.0**
+## **#009_ Ingressando o MacOS Catalina 10.15 no Domínio do UCS Univention Core Free 5.0**
 
 Vídeo mostrando os procedimentos básicos para ingressar computadores rodando o macOS da Apple (Catalina, Mojave, High Sierra, Sierra, etc...) no Domínio do SAMBA-4 Active Directory Domain Service do UCS Univention Core Free 5.0.x no VirtualBOX.
 
@@ -154,8 +154,32 @@ Os procedimentos para adicionar máquinas ao domínio é praticamente igual em t
 
 Para ingressar máquinas MacOS em Controladores de Domínio, tanto do Microsoft Windows Server ou GNU/Linux SAMBA-4 configurados com Active Directory, não é necessário a instalação de qualquer software, o próprio ambiente já está preparado para configurações de Active Directory, LDAP ou NIS.
 
-[![Windows Server no Domínio](http://img.youtube.com/vi//0.jpg)]( "Windows Server no Domínio")
+[!macOS no Domínio](http://img.youtube.com/vi//0.jpg)]( "macOS no Domínio")
 
 Link da vídeo aula: 
 
 Link do script utilizado nesse vídeo: https://github.com/vaamonde/ucsunivention/blob/master/etapas/Etapa-009-IngressandoMacOS.txt
+
+## **#010_ Ingressando o Linux Desktop no Domínio do UCS Univention Core Free 5.0**
+
+Vídeo mostrando os procedimentos básicos para ingressar computadores rodando o Linux Desktop (Linux Mint, Ubuntu, etc...) no Domínio do SAMBA-4 Active Directory Domain Service do UCS Univention Core Free 5.0.x no VirtualBOX.
+
+UCS Univention Domain Join é um assistente para ingressar computadores Ubuntu (e seus sabores) em domínios Univention Corporate Server (UCS) Core Free, ele executará as seguintes etapas para você: Criar um objeto LDAP para o seu computador Ubuntu no UCS, Configurar os ponteiros no DNS, Configurar a autenticação Kerberos, Configurar o gerenciador de login, se necessário Configurar a autenticação PAM (Linux Pluggable Authentication Modules) e Configurar o SSSD (System Security Services Daemon).
+
+[![Linux Desktop no Domínio](http://img.youtube.com/vi//0.jpg)]( "Linux Desktop no Domínio")
+
+Link da vídeo aula: 
+
+Link do script utilizado nesse vídeo: 
+
+## **#010_ Ingressando o Linux Server no Domínio do UCS Univention Core Free 5.0**
+
+Vídeo mostrando os procedimentos básicos para ingressar computadores rodando o Linux Server (Ubuntu Server, Debian Server, etc...) no Domínio do SAMBA-4 Active Directory Domain Service do UCS Univention Core Free 5.0.x no VirtualBOX.
+
+UCS Univention Domain Join é um assistente para ingressar computadores Ubuntu (e seus sabores) em domínios Univention Corporate Server (UCS) Core Free, ele executará as seguintes etapas para você: Criar um objeto LDAP para o seu computador Ubuntu no UCS, Configurar os ponteiros no DNS, Configurar a autenticação Kerberos, Configurar o gerenciador de login, se necessário Configurar a autenticação PAM (Linux Pluggable Authentication Modules) e Configurar o SSSD (System Security Services Daemon).
+
+[![Linux Desktop no Domínio](http://img.youtube.com/vi//0.jpg)]( "Linux Desktop no Domínio")
+
+Link da vídeo aula: 
+
+Link do script utilizado nesse vídeo: 
