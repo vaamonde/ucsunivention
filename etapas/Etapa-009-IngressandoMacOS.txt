@@ -8,8 +8,8 @@ Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem
 YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica
 LinkedIn Robson Vaamonde: https://www.linkedin.com/in/robson-vaamonde-0b029028/
 Data de criação: 15/07/2021
-Data de atualização: 15/07/2021
-Versão: 0.01
+Data de atualização: 16/07/2021
+Versão: 0.03
 Testado e homologado no UCS Univention Core Free 5.0.x
 
 Atualização do UCS: https://docs.software-univention.de/quickstart-en-5.0.html
@@ -41,7 +41,7 @@ Segunda etapa: Alterando as Informações de Hostname e Endereço IPv4
 				OK
 	Reiniciar
 
-Terceira etapa: Forçando as Alterações de Hostname via Terminal
+Terceira etapa: Forçando as Alterações de Hostname via Terminal (se necessário)
 	Terminal
 		sudo scutil --set ComputerName ptispo01dt005.pti.intra
 		sudo scutil --set HostName ptispo01dt005.pti.intra
@@ -57,9 +57,27 @@ Quarta etapa: Ingressando o macOS Catalina no Domínio do UCS
 					Servidor de Contas de Rede: <Conectar>
 						Servidor: ptispo01dc01.pti.intra
 						ID de Computador Cliente: ptispo01dt005
-						Usuário Admin do AD: administrator
-						Senha do Admin do AD: pti@2018
+						Usuário Administrador do AD: administrator
+						Senha do Administrador do AD: pti@2018
 					OK
-				Clique no Cadeado para fechar as alterações
-	Fazer o Log Out
+					Preferências do Sistema
+						Nome do Usuário: Robson Vaamonde
+						Senha: pti@2018
+					Modificar Configurações
+				Clique no Cadeado para evitar alterações
+	Menu Apple
+		Finalizar Sessão de Robson Vaamonde
+			Finalizar Sessão
 
+Quita etapa: Validando o acesso aos compartilhamentos do UCS
+	Terminal
+		id
+		exit
+	Finder
+		Ir 
+			Conectar ao Servidor 
+				Endereço do Servidor: ptispo01dc01.pti.intra
+			Conectar
+				Conectar
+					Sysvol
+				OK

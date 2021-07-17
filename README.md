@@ -172,7 +172,7 @@ Link da vídeo aula:
 
 Link do script utilizado nesse vídeo: 
 
-## **#010_ Ingressando o Linux Server no Domínio do UCS Univention Core Free 5.0**
+## **#011_ Ingressando o Linux Server no Domínio do UCS Univention Core Free 5.0**
 
 Vídeo mostrando os procedimentos básicos para ingressar computadores rodando o Linux Server (Ubuntu Server, Debian Server, etc...) no Domínio do SAMBA-4 Active Directory Domain Service do UCS Univention Core Free 5.0.x no VirtualBOX.
 
