@@ -8,8 +8,8 @@ Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem
 YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica
 LinkedIn Robson Vaamonde: https://www.linkedin.com/in/robson-vaamonde-0b029028/
 Data de criação: 16/07/2021
-Data de atualização: 16/07/2021
-Versão: 0.01
+Data de atualização: 18/07/2021
+Versão: 0.02
 Testado e homologado no UCS Univention Core Free 5.0.x
 
 Atualização do UCS: https://docs.software-univention.de/quickstart-en-5.0.html
@@ -17,7 +17,21 @@ Manual do UCS: https://docs.software-univention.de/manual-5.0.html
 Active Directory UCS: https://www.univention.com/products/ucs/functions/services-windows-samba/
 Active Directory Compatible: https://www.univention.com/products/univention-app-center/app-catalog/samba4/
 Release Notes UCS 5.0: https://docs.software-univention.de/release-notes-5.0-0-en.html
+Domain Join Assistant: https://www.univention.com/blog-en/2020/08/connecting-ubuntu-clients-to-ucs-domains-new-version-univention-domain-join-assistant/
+Univention Domain Join Assistant: https://www.univention.com/products/ucs/functions/univention-domain-join-assistant/
+Github Univention Domain Join: https://github.com/univention/univention-domain-join
 
+Soluções para Ingressar Máquinas GNU/Linux no Domínio do UCS ou Microsoft Windows Server
+01_ CID (Closed In Directory): https://sourceforge.net/p/c-i-d/news/
+02_ Centrify Express for Linux: https://www.centrify.com/express/linux/
+03_ PowerBroker Open: https://github.com/BeyondTrust/pbis-open
+04_ System Security Services Daemon: https://sssd.io/
+05_ Manage enrollment in realms: https://www.systutorials.com/docs/linux/man/8-realm/
+06_ Linux PAM (Pluggable Authentication Modules for Linux): http://www.linux-pam.org/
+
+OBSERVAÇÃO IMPORTANTE: O repositório do Univention Domain Join suporta somente as versões da
+distribuição: Ubuntu (versões: 14.04.x LTS, 16.04.x LTS, 18.04.x LTS e 20.04.x LTS), como o
+Linux Mint é baseado na distribuição Ubuntu ele suporta as versões: 17.x, 18.x, 19.x e 20.x.
 
 Primeira etapa: Verificando as Informações do Hostname e Endereço IPv4
 	Terminal
@@ -54,6 +68,7 @@ Quinta etapa: Ingressando o Linux Mint e Ubuntu Desktop no Domínio do UCS
 					Domain name or IP address: pti.intra
 					Domain administrator's username: Administrator
 					Domain administrator's password: pti@2018
+					Set UCS DC as DNS Server: Enable
 				Join
 		The domain join was successful. Please reboot the system
 			OK
