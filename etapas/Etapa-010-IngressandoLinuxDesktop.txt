@@ -8,8 +8,8 @@ Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem
 YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica
 LinkedIn Robson Vaamonde: https://www.linkedin.com/in/robson-vaamonde-0b029028/
 Data de criação: 16/07/2021
-Data de atualização: 18/07/2021
-Versão: 0.02
+Data de atualização: 19/07/2021
+Versão: 0.03
 Testado e homologado no UCS Univention Core Free 5.0.x
 
 Atualização do UCS: https://docs.software-univention.de/quickstart-en-5.0.html
@@ -37,6 +37,8 @@ Primeira etapa: Verificando as Informações do Hostname e Endereço IPv4
 	Terminal
 		hostnamectl
 		hostname -A
+		cat /etc/hostname
+		cat /etc/hosts
 		ifconfig
 		nslookup pti.intra
 		ping pti.intra
