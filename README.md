@@ -154,9 +154,9 @@ Os procedimentos para adicionar máquinas ao domínio é praticamente igual em t
 
 Para ingressar máquinas MacOS em Controladores de Domínio, tanto do Microsoft Windows Server ou GNU/Linux SAMBA-4 configurados com Active Directory, não é necessário a instalação de qualquer software, o próprio ambiente já está preparado para configurações de Active Directory, LDAP ou NIS.
 
-[!macOS no Domínio](http://img.youtube.com/vi//0.jpg)]( "macOS no Domínio")
+[![macOS no Domínio](http://img.youtube.com/vi/_Dr8qf-Xhdc/0.jpg)](https://www.youtube.com/watch?v=_Dr8qf-Xhdc "macOS no Domínio")
 
-Link da vídeo aula: 
+Link da vídeo aula: https://www.youtube.com/watch?v=_Dr8qf-Xhdc
 
 Link do script utilizado nesse vídeo: https://github.com/vaamonde/ucsunivention/blob/master/etapas/Etapa-009-IngressandoMacOS.txt
 
@@ -166,11 +166,11 @@ Vídeo mostrando os procedimentos básicos para ingressar computadores rodando o
 
 UCS Univention Domain Join é um assistente para ingressar computadores Ubuntu (e seus sabores) em domínios Univention Corporate Server (UCS) Core Free, ele executará as seguintes etapas para você: Criar um objeto LDAP para o seu computador Ubuntu no UCS, Configurar os ponteiros no DNS, Configurar a autenticação Kerberos, Configurar o gerenciador de login, se necessário Configurar a autenticação PAM (Linux Pluggable Authentication Modules) e Configurar o SSSD (System Security Services Daemon).
 
-[![Linux Desktop no Domínio](http://img.youtube.com/vi//0.jpg)]( "Linux Desktop no Domínio")
+[![Linux Desktop no Domínio](http://img.youtube.com/vi/Q1TsFQgH-bo/0.jpg)](https://www.youtube.com/watch?v=Q1TsFQgH-bo "Linux Desktop no Domínio")
 
-Link da vídeo aula: 
+Link da vídeo aula: https://www.youtube.com/watch?v=Q1TsFQgH-bo
 
-Link do script utilizado nesse vídeo: 
+Link do script utilizado nesse vídeo: https://github.com/vaamonde/ucsunivention/blob/master/etapas/Etapa-010-IngressandoLinuxDesktop.txt
 
 ## **#011_ Ingressando o Linux Server no Domínio do UCS Univention Core Free 5.0**
 

@@ -9,7 +9,7 @@ YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica
 LinkedIn Robson Vaamonde: https://www.linkedin.com/in/robson-vaamonde-0b029028/
 Data de criação: 16/07/2021
 Data de atualização: 19/07/2021
-Versão: 0.03
+Versão: 0.05
 Testado e homologado no UCS Univention Core Free 5.0.x
 
 Atualização do UCS: https://docs.software-univention.de/quickstart-en-5.0.html
@@ -40,6 +40,8 @@ Primeira etapa: Verificando as Informações do Hostname e Endereço IPv4
 		cat /etc/hostname
 		cat /etc/hosts
 		ifconfig
+		route -n
+		systemd-resolve --status
 		nslookup pti.intra
 		ping pti.intra
 		ping google.com
@@ -58,7 +60,7 @@ Terceira etapa: Adicionando o PPA do Univention Domain Join no Linux Mint e Ubun
 		sudo add-apt-repository ppa:univention-dev/ppa
 		sudo apt update
 
-Quarta etapa: Instalando o Univention Domain Joi no Linux Mint
+Quarta etapa: Instalando o Univention Domain Joi no Linux Mint e Ubuntu
 	Terminal
 		sudo DEBIAN_FRONTEND=noninteractive apt install univention-domain-join
 
@@ -77,7 +79,11 @@ Quinta etapa: Ingressando o Linux Mint e Ubuntu Desktop no Domínio do UCS
 			Close
 		Reiniciar o Sistema
 
+Sexta etapa: Se autenticando no Linux Mint e Ubuntu Desktop com o usuário Administrator
 OBSERVAÇÃO IMPORTANTE: para se autenticar com o usuário: administrator no Linux Mint ou 
 no Ubuntu Desktop o nome do usuário deve começar em a Letra "A" Maiúscula: Administrator
 	Terminal
 		id
+	Gerenciador de Arquivos
+		Ctrl+L 
+			smb://ptispo01dc01.pti.intra
