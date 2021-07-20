@@ -182,4 +182,4 @@ UCS Univention Domain Join é um assistente para ingressar computadores Ubuntu (
 
 Link da vídeo aula: 
 
-Link do script utilizado nesse vídeo: 
+Link do script utilizado nesse vídeo: https://github.com/vaamonde/ucsunivention/blob/master/etapas/Etapa-011-IngressandoLinuxServer.txt

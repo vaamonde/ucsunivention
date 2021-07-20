@@ -8,8 +8,8 @@ Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem
 YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica
 LinkedIn Robson Vaamonde: https://www.linkedin.com/in/robson-vaamonde-0b029028/
 Data de criação: 15/07/2021
-Data de atualização: 16/07/2021
-Versão: 0.03
+Data de atualização: 20/07/2021
+Versão: 0.04
 Testado e homologado no UCS Univention Core Free 5.0.x
 
 Atualização do UCS: https://docs.software-univention.de/quickstart-en-5.0.html
@@ -17,6 +17,9 @@ Manual do UCS: https://docs.software-univention.de/manual-5.0.html
 Active Directory UCS: https://www.univention.com/products/ucs/functions/services-windows-samba/
 Active Directory Compatible: https://www.univention.com/products/univention-app-center/app-catalog/samba4/
 Release Notes UCS 5.0: https://docs.software-univention.de/release-notes-5.0-0-en.html
+
+Vídeo antigo Ingressando o macOS Sierra no Domínio: https://www.youtube.com/watch?v=hYSgr-fwbhw
+Versão atual do macOS: Big Sur (11), lançado no dia: 07/07/2021 a versão: macOS Monterey (12)
 
 Primeira etapa: Verificando as Informações do Hostname e Endereço IPv4
 	Terminal

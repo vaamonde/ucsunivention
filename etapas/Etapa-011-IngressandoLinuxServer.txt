@@ -7,9 +7,9 @@ Facebook Bora para Prática: https://www.facebook.com/BoraParaPratica
 Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem
 YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica
 LinkedIn Robson Vaamonde: https://www.linkedin.com/in/robson-vaamonde-0b029028/
-Data de criação: 16/07/2021
-Data de atualização: 19/07/2021
-Versão: 0.05
+Data de criação: 20/07/2021
+Data de atualização: 20/07/2021
+Versão: 0.01
 Testado e homologado no UCS Univention Core Free 5.0.x
 
 Atualização do UCS: https://docs.software-univention.de/quickstart-en-5.0.html
@@ -22,12 +22,9 @@ Univention Domain Join Assistant: https://www.univention.com/products/ucs/functi
 Github Univention Domain Join: https://github.com/univention/univention-domain-join
 
 Soluções para Ingressar Máquinas GNU/Linux no Domínio do UCS ou Microsoft Windows Server
-01_ CID (Closed In Directory): https://sourceforge.net/p/c-i-d/news/
-02_ Centrify Express for Linux: https://www.centrify.com/express/linux/
-03_ PowerBroker Open: https://github.com/BeyondTrust/pbis-open
-04_ System Security Services Daemon: https://sssd.io/
-05_ Manage enrollment in realms: https://www.systutorials.com/docs/linux/man/8-realm/
-06_ Linux PAM (Pluggable Authentication Modules for Linux): http://www.linux-pam.org/
+01_ System Security Services Daemon: https://sssd.io/
+02_ Manage enrollment in realms: https://www.systutorials.com/docs/linux/man/8-realm/
+03_ Linux PAM (Pluggable Authentication Modules for Linux): http://www.linux-pam.org/
 
 OBSERVAÇÃO IMPORTANTE: O repositório do Univention Domain Join suporta somente as versões da
 distribuição: Ubuntu (versões: 14.04.x LTS, 16.04.x LTS, 18.04.x LTS e 20.04.x LTS), como o
@@ -42,10 +39,10 @@ Primeira etapa: Verificando as Informações do Hostname e Endereço IPv4
 		ifconfig
 		route -n
 		systemd-resolve --status
+		cat /etc/netplan/
 		nslookup pti.intra
 		ping pti.intra
 		ping google.com
-	exit
 
 Segunda etapa: Atualizando o Sistema antes de Ingressar no Domínio do UCS
 	Terminal
@@ -55,35 +52,21 @@ Segunda etapa: Atualizando o Sistema antes de Ingressar no Domínio do UCS
 		sudo apt autoclean
 		sudo apt clean
 
-Terceira etapa: Adicionando o PPA do Univention Domain Join no Linux Mint e Ubuntu
+Terceira etapa: Adicionando o PPA do Univention Domain Join no Ubuntu Server
 	Terminal
 		sudo add-apt-repository ppa:univention-dev/ppa
 		sudo apt update
 
-Quarta etapa: Instalando o Univention Domain Join no Linux Mint e Ubuntu
+Quarta etapa: Instalando o Univention Domain Join no Ubuntu Server
 	Terminal
 		sudo DEBIAN_FRONTEND=noninteractive apt install univention-domain-join
 
-Quinta etapa: Ingressando o Linux Mint e Ubuntu Desktop no Domínio do UCS
-	Menu
-		Univention Domain Join
-			Senha: pti@2018
-				Univention Domain Join Assistant
-					Domain name or IP address: pti.intra
-					Domain administrator's username: Administrator
-					Domain administrator's password: pti@2018
-					Set UCS DC as DNS Server: Enable
-				Join
-		The domain join was successful. Please reboot the system
-			OK
-			Close
-		Reiniciar o Sistema
+Quinta etapa: Ingressando o Ubuntu Server no Domínio do UCS
+	Terminal
+		sudo univention-domain-join-cli
 
 Sexta etapa: Se autenticando no Linux Mint e Ubuntu Desktop com o usuário Administrator
 OBSERVAÇÃO IMPORTANTE: para se autenticar com o usuário: administrator no Linux Mint ou 
 no Ubuntu Desktop o nome do usuário deve começar em a Letra "A" Maiúscula: Administrator
 	Terminal
 		id
-	Gerenciador de Arquivos
-		Ctrl+L 
-			smb://ptispo01dc01.pti.intra
