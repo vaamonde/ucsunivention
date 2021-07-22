@@ -8,8 +8,8 @@ Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem
 YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica
 LinkedIn Robson Vaamonde: https://www.linkedin.com/in/robson-vaamonde-0b029028/
 Data de criação: 20/07/2021
-Data de atualização: 20/07/2021
-Versão: 0.01
+Data de atualização: 22/07/2021
+Versão: 0.03
 Testado e homologado no UCS Univention Core Free 5.0.x
 
 Atualização do UCS: https://docs.software-univention.de/quickstart-en-5.0.html
@@ -29,6 +29,8 @@ Soluções para Ingressar Máquinas GNU/Linux no Domínio do UCS ou Microsoft Wi
 OBSERVAÇÃO IMPORTANTE: O repositório do Univention Domain Join suporta somente as versões da
 distribuição: Ubuntu (versões: 14.04.x LTS, 16.04.x LTS, 18.04.x LTS e 20.04.x LTS), como o
 Linux Mint é baseado na distribuição Ubuntu ele suporta as versões: 17.x, 18.x, 19.x e 20.x.
+Ele foi projetado para funcionar somente em Distribuições que possui Ambiente Gráfico, em
+servidores é necessário fazer o procedimento manualmente utilizando o PAM, Kerberos, SSSD, etc.
 
 Primeira etapa: Verificando as Informações do Hostname e Endereço IPv4
 	Terminal
@@ -39,10 +41,12 @@ Primeira etapa: Verificando as Informações do Hostname e Endereço IPv4
 		ifconfig
 		route -n
 		systemd-resolve --status
-		cat /etc/netplan/
+		cat /etc/netplan/00-installer-config.yaml
 		nslookup pti.intra
 		ping pti.intra
 		ping google.com
+		timedatectl
+		date
 
 Segunda etapa: Atualizando o Sistema antes de Ingressar no Domínio do UCS
 	Terminal
@@ -52,21 +56,33 @@ Segunda etapa: Atualizando o Sistema antes de Ingressar no Domínio do UCS
 		sudo apt autoclean
 		sudo apt clean
 
-Terceira etapa: Adicionando o PPA do Univention Domain Join no Ubuntu Server
+Terceira etapa: Instalando os Pacotes necessários para Ingressar no Domínio do UCS
 	Terminal
-		sudo add-apt-repository ppa:univention-dev/ppa
 		sudo apt update
+		sudo apt -y install realmd libnss-sss libpam-sss sssd sssd-tools adcli \
+		samba-common-bin oddjob oddjob-mkhomedir packagekit
 
-Quarta etapa: Instalando o Univention Domain Join no Ubuntu Server
+Quarta etapa: Localizando o Domínio do UCS
 	Terminal
-		sudo DEBIAN_FRONTEND=noninteractive apt install univention-domain-join
+		sudo realm discover pti.intra
 
 Quinta etapa: Ingressando o Ubuntu Server no Domínio do UCS
 	Terminal
-		sudo univention-domain-join-cli
+		sudo realm join -U Administrator pti.intra
+		sudo realm list
+		sudo id Adminisrtator@pti.intra 
 
-Sexta etapa: Se autenticando no Linux Mint e Ubuntu Desktop com o usuário Administrator
-OBSERVAÇÃO IMPORTANTE: para se autenticar com o usuário: administrator no Linux Mint ou 
-no Ubuntu Desktop o nome do usuário deve começar em a Letra "A" Maiúscula: Administrator
+Sexta etapa: Editando os arquivos de configurações do PAM, SSSD e Sudoers
 	Terminal
-		id
+		sudo pam-auth-update --enable mkhomedir
+		sudo vim /etc/pam.d/common-session
+			session optional pam_mkhomedir.so skel=/etc/skel umask=077
+		sudo vim /etc/sssd/sssd.conf
+			use_fully_qualified_names = False
+		sudo vim /etc/sudoers
+			adminisrtator@pti.intra ALL=(ALL) ALL
+		sudo pam-auth-update
+			<OK>
+				[*] activate mkhomedir
+			<OK>
+		sudo systemctl restart sssd

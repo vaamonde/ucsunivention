@@ -8,8 +8,8 @@ Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem
 YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica
 LinkedIn Robson Vaamonde: https://www.linkedin.com/in/robson-vaamonde-0b029028/
 Data de criação: 16/07/2021
-Data de atualização: 19/07/2021
-Versão: 0.05
+Data de atualização: 22/07/2021
+Versão: 0.06
 Testado e homologado no UCS Univention Core Free 5.0.x
 
 Atualização do UCS: https://docs.software-univention.de/quickstart-en-5.0.html
@@ -79,9 +79,13 @@ Quinta etapa: Ingressando o Linux Mint e Ubuntu Desktop no Domínio do UCS
 			Close
 		Reiniciar o Sistema
 
+OBSERVAÇÃO IMPORTANTE: no vídeo não foi mostrado o arquivo de Log da ingresso da máquina 
+GNU/Linux Mint ou Ubuntu no domínio, sua localização fica em: /var/log/univention/, lá
+temos os arquivos de Logs: domain-join-gui.log e domain-join-gui-cli.log.
+
 Sexta etapa: Se autenticando no Linux Mint e Ubuntu Desktop com o usuário Administrator
 OBSERVAÇÃO IMPORTANTE: para se autenticar com o usuário: administrator no Linux Mint ou 
-no Ubuntu Desktop o nome do usuário deve começar em a Letra "A" Maiúscula: Administrator
+no Ubuntu Desktop o nome do usuário deve começar com a Letra "A" Maiúscula: Administrator
 	Terminal
 		id
 	Gerenciador de Arquivos
