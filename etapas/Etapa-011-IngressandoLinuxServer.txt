@@ -69,20 +69,19 @@ Quarta etapa: Localizando o Domínio do UCS
 Quinta etapa: Ingressando o Ubuntu Server no Domínio do UCS
 	Terminal
 		sudo realm join -U Administrator pti.intra
+			Password for Administrator: pti@2018
 		sudo realm list
-		sudo id Adminisrtator@pti.intra 
+		sudo id administrator@pti.intra 
 
 Sexta etapa: Editando os arquivos de configurações do PAM, SSSD e Sudoers
 	Terminal
 		sudo pam-auth-update --enable mkhomedir
-		sudo vim /etc/pam.d/common-session
-			session optional pam_mkhomedir.so skel=/etc/skel umask=077
 		sudo vim /etc/sssd/sssd.conf
 			use_fully_qualified_names = False
-		sudo vim /etc/sudoers
-			adminisrtator@pti.intra ALL=(ALL) ALL
-		sudo pam-auth-update
-			<OK>
-				[*] activate mkhomedir
-			<OK>
-		sudo systemctl restart sssd
+		sudo systemctl restart sssd.services
+		sudo usermod -aG sudo administrator@pti.intra
+		sudo -i
+			vim /etc/sudoers.d/ptiintra
+				user ALL=(ALL) ALL
+				administrator ALL=(ALL) ALL
+		
