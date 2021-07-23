@@ -11,6 +11,7 @@ Data de criação: 20/07/2021
 Data de atualização: 23/07/2021
 Versão: 0.04
 Testado e homologado no UCS Univention Core Free 5.0.x
+Testado e homologado no Ubuntu Server 18.04.x e 20.04.x LTS
 
 Atualização do UCS: https://docs.software-univention.de/quickstart-en-5.0.html
 Manual do UCS: https://docs.software-univention.de/manual-5.0.html
@@ -47,6 +48,7 @@ Primeira etapa: Verificando as Informações do Hostname e Endereço IPv4
 		ping pti.intra
 		ping google.com
 		timedatectl
+		sudo timedatectl set-timezone "America/Sao_Paulo"
 		date
 
 Segunda etapa: Atualizando o Sistema antes de Ingressar no Domínio do UCS
@@ -65,9 +67,9 @@ Terceira etapa: Instalando os Pacotes necessários para Ingressar o Ubuntu no Do
 
 Quarta etapa: Atualizando a data e hora do Ubuntu Server com o Servidor NTP do UCS
 	Terminal
-		sudo systemctl stop ntp
+		sudo systemctl stop ntp.service
 		sudo ntpdate -s ptispo01dc01.pti.intra
-		sudo systemctl start ntp
+		sudo systemctl start ntp.service
 		timedatectl
 		date
 
@@ -77,8 +79,8 @@ Quinta etapa: Localizando o Domínio do UCS
 
 Sexta etapa: Ingressando o Ubuntu Server no Domínio do UCS
 	Terminal
-		sudo realm join -U Administrator pti.intra
-			Password for Administrator: pti@2018
+		sudo realm join -U administrator pti.intra
+			Password for administrator: pti@2018
 		sudo realm list
 		sudo id administrator@pti.intra
 		sudo getent passwd administrator@pti.intra
@@ -97,8 +99,6 @@ Sétima etapa: Editando os arquivos de configurações do PAM e SSSD
 		sudo id administrator
 		sudo getent passwd administrator
 		sudo samba-tool domain info ptispo01dc01.pti.intra
-		sudo samba-tool computer edit ubuntu-XX04 -U Administrator -H ldap://ptispo01dc01.pti.intra
-			operatingSystem: Ubuntu XX.04 LTS
 
 Oitava etapa: Adicionando o usuário Administrator nas configurações do Sudoers no Ubuntu Server
 		sudo usermod -aG sudo administrator
@@ -106,3 +106,4 @@ Oitava etapa: Adicionando o usuário Administrator nas configurações do Sudoer
 			vim /etc/sudoers.d/ptiintra
 				user ALL=(ALL) ALL
 				administrator ALL=(ALL) ALL
+			reboot
