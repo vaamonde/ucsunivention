@@ -8,8 +8,8 @@ Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem
 YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica
 LinkedIn Robson Vaamonde: https://www.linkedin.com/in/robson-vaamonde-0b029028/
 Data de criação: 20/07/2021
-Data de atualização: 22/07/2021
-Versão: 0.03
+Data de atualização: 23/07/2021
+Versão: 0.04
 Testado e homologado no UCS Univention Core Free 5.0.x
 
 Atualização do UCS: https://docs.software-univention.de/quickstart-en-5.0.html
@@ -20,6 +20,7 @@ Release Notes UCS 5.0: https://docs.software-univention.de/release-notes-5.0-0-e
 Domain Join Assistant: https://www.univention.com/blog-en/2020/08/connecting-ubuntu-clients-to-ucs-domains-new-version-univention-domain-join-assistant/
 Univention Domain Join Assistant: https://www.univention.com/products/ucs/functions/univention-domain-join-assistant/
 Github Univention Domain Join: https://github.com/univention/univention-domain-join
+Ubuntu Domain Join: https://ubuntu.com/engage/microsoft-active-directory
 
 Soluções para Ingressar Máquinas GNU/Linux no Domínio do UCS ou Microsoft Windows Server
 01_ System Security Services Daemon: https://sssd.io/
@@ -56,32 +57,52 @@ Segunda etapa: Atualizando o Sistema antes de Ingressar no Domínio do UCS
 		sudo apt autoclean
 		sudo apt clean
 
-Terceira etapa: Instalando os Pacotes necessários para Ingressar no Domínio do UCS
+Terceira etapa: Instalando os Pacotes necessários para Ingressar o Ubuntu no Domínio do UCS
 	Terminal
 		sudo apt update
-		sudo apt -y install realmd libnss-sss libpam-sss sssd sssd-tools adcli \
-		samba-common-bin oddjob oddjob-mkhomedir packagekit
+		sudo apt -y install realmd libnss-sss libpam-sss sssd sssd-ad sssd-tools sssd-dbus \
+		adcli samba-common-bin oddjob oddjob-mkhomedir packagekit ntp ntpdate
 
-Quarta etapa: Localizando o Domínio do UCS
+Quarta etapa: Atualizando a data e hora do Ubuntu Server com o Servidor NTP do UCS
+	Terminal
+		sudo systemctl stop ntp
+		sudo ntpdate -s ptispo01dc01.pti.intra
+		sudo systemctl start ntp
+		timedatectl
+		date
+
+Quinta etapa: Localizando o Domínio do UCS
 	Terminal
 		sudo realm discover pti.intra
 
-Quinta etapa: Ingressando o Ubuntu Server no Domínio do UCS
+Sexta etapa: Ingressando o Ubuntu Server no Domínio do UCS
 	Terminal
 		sudo realm join -U Administrator pti.intra
 			Password for Administrator: pti@2018
 		sudo realm list
-		sudo id administrator@pti.intra 
-
-Sexta etapa: Editando os arquivos de configurações do PAM, SSSD e Sudoers
+		sudo id administrator@pti.intra
+		sudo getent passwd administrator@pti.intra
+		
+Sétima etapa: Editando os arquivos de configurações do PAM e SSSD
 	Terminal
 		sudo pam-auth-update --enable mkhomedir
 		sudo vim /etc/sssd/sssd.conf
+			services = nss, pam, ifp
 			use_fully_qualified_names = False
-		sudo systemctl restart sssd.services
-		sudo usermod -aG sudo administrator@pti.intra
+			fallback_homedir = /home/%u
+		sudo systemctl restart sssd.service
+		sudo systemctl status sssd.service
+		sudo sssctl domain-status pti.intra
+		sudo sssctl user-checks administrator
+		sudo id administrator
+		sudo getent passwd administrator
+		sudo samba-tool domain info ptispo01dc01.pti.intra
+		sudo samba-tool computer edit ubuntu-XX04 -U Administrator -H ldap://ptispo01dc01.pti.intra
+			operatingSystem: Ubuntu XX.04 LTS
+
+Oitava etapa: Adicionando o usuário Administrator nas configurações do Sudoers no Ubuntu Server
+		sudo usermod -aG sudo administrator
 		sudo -i
 			vim /etc/sudoers.d/ptiintra
 				user ALL=(ALL) ALL
 				administrator ALL=(ALL) ALL
-		
