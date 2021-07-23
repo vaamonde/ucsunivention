@@ -9,7 +9,7 @@ YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica
 LinkedIn Robson Vaamonde: https://www.linkedin.com/in/robson-vaamonde-0b029028/
 Data de criação: 20/07/2021
 Data de atualização: 23/07/2021
-Versão: 0.04
+Versão: 0.05
 Testado e homologado no UCS Univention Core Free 5.0.x
 Testado e homologado no Ubuntu Server 18.04.x e 20.04.x LTS
 
@@ -75,11 +75,11 @@ Quarta etapa: Atualizando a data e hora do Ubuntu Server com o Servidor NTP do U
 
 Quinta etapa: Localizando o Domínio do UCS
 	Terminal
-		sudo realm discover pti.intra
+		sudo realm discover -v pti.intra
 
 Sexta etapa: Ingressando o Ubuntu Server no Domínio do UCS
 	Terminal
-		sudo realm join -U administrator pti.intra
+		sudo realm join -v -U administrator pti.intra
 			Password for administrator: pti@2018
 		sudo realm list
 		sudo id administrator@pti.intra
@@ -92,6 +92,7 @@ Sétima etapa: Editando os arquivos de configurações do PAM e SSSD
 			services = nss, pam, ifp
 			use_fully_qualified_names = False
 			fallback_homedir = /home/%u
+			ad_gpo_access_control = permissive
 		sudo systemctl restart sssd.service
 		sudo systemctl status sssd.service
 		sudo sssctl domain-status pti.intra
@@ -99,11 +100,22 @@ Sétima etapa: Editando os arquivos de configurações do PAM e SSSD
 		sudo id administrator
 		sudo getent passwd administrator
 		sudo samba-tool domain info ptispo01dc01.pti.intra
+		sudo smbclient -k -L ptispo01dc01.pti.intra
 
 Oitava etapa: Adicionando o usuário Administrator nas configurações do Sudoers no Ubuntu Server
+	Terminal
 		sudo usermod -aG sudo administrator
 		sudo -i
 			vim /etc/sudoers.d/ptiintra
 				user ALL=(ALL) ALL
 				administrator ALL=(ALL) ALL
-			reboot
+
+Nona etapa: Patch de Correção da autenticação do SSSD Securetty no Ubuntu Server 20.04.x
+	Terminal
+		sudo cp /usr/share/doc/util-linux/examples/securetty /etc/securetty
+		reboot
+
+Décima etapa: Acessando remotamente os servidores Ubuntu com o usuário administrator
+	Terminal
+		ssh administrator@172.16.1.20
+		ssh administrator@172.16.1.21
