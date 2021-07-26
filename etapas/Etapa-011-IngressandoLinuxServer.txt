@@ -8,8 +8,8 @@ Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem
 YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica
 LinkedIn Robson Vaamonde: https://www.linkedin.com/in/robson-vaamonde-0b029028/
 Data de criação: 20/07/2021
-Data de atualização: 23/07/2021
-Versão: 0.05
+Data de atualização: 26/07/2021
+Versão: 0.06
 Testado e homologado no UCS Univention Core Free 5.0.x
 Testado e homologado no Ubuntu Server 18.04.x e 20.04.x LTS
 
@@ -120,4 +120,10 @@ Nona etapa: Patch de Correção da autenticação do SSSD Securetty no Ubuntu Se
 Décima etapa: Acessando remotamente os servidores Ubuntu com o usuário administrator
 	Terminal
 		ssh administrator@172.16.1.20
+			id
+			pwd
+			w
 		ssh administrator@172.16.1.21
+			id
+			pwd
+			w
