@@ -1,0 +1,48 @@
+Autor: Robson Vaamonde
+Procedimentos em TI: http://procedimentosemti.com.br
+Bora para Prática: http://boraparapratica.com.br
+Robson Vaamonde: http://vaamonde.com.br
+Facebook Procedimentos em TI: https://www.facebook.com/ProcedimentosEmTi
+Facebook Bora para Prática: https://www.facebook.com/BoraParaPratica
+Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem
+YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica
+LinkedIn Robson Vaamonde: https://www.linkedin.com/in/robson-vaamonde-0b029028/
+Data de criação: 26/07/2021
+Data de atualização: 26/07/2021
+Versão: 0.01
+Testado e homologado no UCS Univention Core Free 5.0.x
+
+Atualização do UCS: https://docs.software-univention.de/quickstart-en-5.0.html
+Manual do UCS: https://docs.software-univention.de/manual-5.0.html
+Active Directory UCS: https://www.univention.com/products/ucs/functions/services-windows-samba/
+Active Directory Compatible: https://www.univention.com/products/univention-app-center/app-catalog/samba4/
+Release Notes UCS 5.0: https://docs.software-univention.de/release-notes-5.0-0-en.html
+
+Versões do RSAT (Remote Server Administration Tools) suportados no UCS
+01_ Download do RSAT: https://www.microsoft.com/pt-BR/download/details.aspx?id=45520
+	(OBSERVAÇÃO IMPORTANTE: RECOMENDADO BAIXAR A VERSÃO: PT-BR WindowsTH-RSAT_WS_1709-x64.msu)
+02_ Available Features on Demand: https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/features-on-demand-non-language-fod#remote-server-administration-tools-rsat
+03_ Features On Demand: https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/features-on-demand-v2--capabilities#using-dism-add-capability-to-add-or-remove-fods
+
+OBSERVAÇÃO IMPORTANTE: O suporte ao RSAT do Windows 7 foi retirado no Site Oficial da Microsoft,
+somente as versões para o Sistema Operacional Windows 10 estão disponíveis no site.
+
+Primeira etapa: Fazendo o download do RSAT do Site Oficial da Microsoft
+	Download da versão: PT-BR WindowsTH-RSAT_WS_1709-x64.msu
+
+Segunda etapa: Baixando o Patch de Correção do DNS e Instalador Personalizado
+	Download: https://github.com/vaamonde/ucsunivention/blob/master/script/installx64.bat
+	Download: https://github.com/vaamonde/ucsunivention/blob/master/script/unattend_x64.xml
+	Criar o diretório: c:\RSAT
+		Copiar os arquivos: *.msu, *.bat e *.xml para: c:\RSAT
+
+Terceira etapa: Acessando o Prompt de Comando como Administrador
+	Pesquisa do Windows
+		CMD
+			Botão direito do mouse: Abrir como Administrador
+
+Quarta etapa: Acessar o diretório de instalação do RSAT e fazer a instalação
+	Prompt de Comando
+		cd c:\RSAT
+			installx64.bat
+
