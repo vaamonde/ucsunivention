@@ -65,7 +65,7 @@ Terceira etapa: Instalando os Pacotes necessários para Ingressar o Ubuntu no Do
 	Terminal
 		sudo apt update
 		sudo apt -y install realmd libnss-sss libpam-sss sssd sssd-ad sssd-tools sssd-dbus \
-		adcli samba-common-bin oddjob oddjob-mkhomedir packagekit ntp ntpdate
+		adcli samba-common-bin smbclient oddjob oddjob-mkhomedir packagekit ntp ntpdate
 
 Quarta etapa: Atualizando a data e hora do Ubuntu Server com o Servidor NTP do UCS
 	Terminal
@@ -102,7 +102,7 @@ Sétima etapa: Editando os arquivos de configurações do PAM e SSSD
 		sudo id administrator
 		sudo getent passwd administrator
 		sudo samba-tool domain info ptispo01dc01.pti.intra
-		sudo smbclient -k -L ptispo01dc01.pti.intra
+		sudo smbclient -U administrator -L ptispo01dc01.pti.intra
 
 Oitava etapa: Adicionando o usuário Administrator nas configurações do Sudoers no Ubuntu Server
 	Terminal
