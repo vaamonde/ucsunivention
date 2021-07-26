@@ -27,6 +27,8 @@ Soluções para Ingressar Máquinas GNU/Linux no Domínio do UCS ou Microsoft Wi
 01_ System Security Services Daemon: https://sssd.io/
 02_ Manage enrollment in realms: https://www.systutorials.com/docs/linux/man/8-realm/
 03_ Linux PAM (Pluggable Authentication Modules for Linux): http://www.linux-pam.org/
+04_ Kerberos: http://web.mit.edu/kerberos/
+05_ SAMBA-4 Domain Join: https://wiki.samba.org/index.php/Setting_up_Samba_as_a_Domain_Member
 
 OBSERVAÇÃO IMPORTANTE: O repositório do Univention Domain Join suporta somente as versões da
 distribuição: Ubuntu (versões: 14.04.x LTS, 16.04.x LTS, 18.04.x LTS e 20.04.x LTS), como o
