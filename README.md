@@ -178,8 +178,22 @@ Vídeo mostrando os procedimentos básicos para ingressar computadores rodando o
 
 UCS Univention Domain Join é um assistente para ingressar computadores Ubuntu (e seus sabores) em domínios Univention Corporate Server (UCS) Core Free, ele executará as seguintes etapas para você: Criar um objeto LDAP para o seu computador Ubuntu no UCS, Configurar os ponteiros no DNS, Configurar a autenticação Kerberos, Configurar o gerenciador de login, se necessário Configurar a autenticação PAM (Linux Pluggable Authentication Modules) e Configurar o SSSD (System Security Services Daemon).
 
-[![Linux Desktop no Domínio](http://img.youtube.com/vi//0.jpg)]( "Linux Desktop no Domínio")
+[![Linux Server no Domínio](http://img.youtube.com/vi/lK3fZ2G2OMA/0.jpg)](https://www.youtube.com/watch?v=lK3fZ2G2OMA "Linux Server no Domínio")
+
+Link da vídeo aula: https://www.youtube.com/watch?v=lK3fZ2G2OMA
+
+Link do script utilizado nesse vídeo: https://github.com/vaamonde/ucsunivention/blob/master/etapas/Etapa-011-IngressandoLinuxServer.txt
+
+## **#012_ Instalando o RSAT no Windows 10 do UCS Univention Core Free 5.0**
+
+Vídeo mostrando os procedimentos básicos para instalar e configurar o RSAT com objetivo de administrar o Domínio do SAMBA-4 Active Directory Domain Service do UCS Univention Core Free 5.0.x no VirtualBOX.
+
+A RSAT (Remote Server Administration Tools - Ferramentas de Administração de Servidor Remoto) permite que os administradores de IT gerenciem remotamente funções e recursos no Windows Server a partir de um computador que está executando Windows 10 e Windows 7 Service Pack 1. Nas versões RSAT para Windows 10, as ferramentas são novamente habilitadas por padrão. Você pode abrir Ativar Windows ou desativar recursos para desabilitar ferramentas que não deseja usar para Windows 7.
+
+O MMC (Microsoft Management Console - Console de Gerenciamento da Microsoft) server para criar, salvar e abrir ferramentas administrativas, chamadas de consoles, que gerenciam os componentes de hardware, software e rede do seu sistema operacional microsoft Windows. O MMC é executado em todos os sistemas operacionais cliente com suporte no momento.
+
+[![RSAT Windows 10](http://img.youtube.com/vi//0.jpg)]( "RSAT Windows 10")
 
 Link da vídeo aula: 
 
-Link do script utilizado nesse vídeo: https://github.com/vaamonde/ucsunivention/blob/master/etapas/Etapa-011-IngressandoLinuxServer.txt
+Link do script utilizado nesse vídeo: https://github.com/vaamonde/ucsunivention/blob/master/etapas/Etapa-012-InstalandoRSAT.txt

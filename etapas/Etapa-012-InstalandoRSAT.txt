@@ -21,8 +21,10 @@ Release Notes UCS 5.0: https://docs.software-univention.de/release-notes-5.0-0-e
 Versões do RSAT (Remote Server Administration Tools) suportados no UCS
 01_ Download do RSAT: https://www.microsoft.com/pt-BR/download/details.aspx?id=45520
 	(OBSERVAÇÃO IMPORTANTE: RECOMENDADO BAIXAR A VERSÃO: PT-BR WindowsTH-RSAT_WS_1709-x64.msu)
-02_ Available Features on Demand: https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/features-on-demand-non-language-fod#remote-server-administration-tools-rsat
-03_ Features On Demand: https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/features-on-demand-v2--capabilities#using-dism-add-capability-to-add-or-remove-fods
+02_ Ferramentas de Administração de Servidor Remoto (RSAT) para Windows: https://docs.microsoft.com/pt-br/troubleshoot/windows-server/system-management-components/remote-server-administration-tools
+03_ O que é o Console de Gerenciamento da Microsoft?: https://docs.microsoft.com/pt-br/troubleshoot/windows-server/system-management-components/what-is-microsoft-management-console
+04_ Available Features on Demand: https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/features-on-demand-non-language-fod#remote-server-administration-tools-rsat
+05_ Features On Demand: https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/features-on-demand-v2--capabilities#using-dism-add-capability-to-add-or-remove-fods
 
 OBSERVAÇÃO IMPORTANTE: O suporte ao RSAT do Windows 7 foi retirado no Site Oficial da Microsoft,
 somente as versões para o Sistema Operacional Windows 10 estão disponíveis no site.
