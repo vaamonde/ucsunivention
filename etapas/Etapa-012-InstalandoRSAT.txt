@@ -8,8 +8,8 @@ Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem
 YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica
 LinkedIn Robson Vaamonde: https://www.linkedin.com/in/robson-vaamonde-0b029028/
 Data de criação: 26/07/2021
-Data de atualização: 26/07/2021
-Versão: 0.01
+Data de atualização: 27/07/2021
+Versão: 0.02
 Testado e homologado no UCS Univention Core Free 5.0.x
 
 Atualização do UCS: https://docs.software-univention.de/quickstart-en-5.0.html
@@ -41,10 +41,53 @@ Segunda etapa: Baixando o Patch de Correção do DNS e Instalador Personalizado
 Terceira etapa: Acessando o Prompt de Comando como Administrador
 	Pesquisa do Windows
 		CMD
-			Botão direito do mouse: Abrir como Administrador
+			Executar como Administrador
 
 Quarta etapa: Acessar o diretório de instalação do RSAT e fazer a instalação
 	Prompt de Comando
-		cd c:\RSAT
+		cd c:\rsat
 			installx64.bat
+
+Quinta etapa: Verificando as opções do RSAT no Windows 10
+	Menu Windows
+		Ferramentas Administrativas do Windows
+
+Sexta etapa: Criando o MMC personalizado do RSAT no Windows 10
+	Botão do Windows + R (Executar)
+		MMC
+			Raiz do Console
+				Botão direito do mouse: Renomear: pti.intra
+			Arquivo
+				Adicionar/Remover snap-in
+					ADSI Editor;
+					DNS;
+					Domínios e Relação de Confiança do Active Directory;
+					Gerenciamento de Impressão;
+						Adicionar servidores: ptispo01dc01.pti.intra <Adicionar a Lista>
+						<Concluir>
+					Gerenciamento de Política de Grupo;
+					Pastas Compartilhadas;
+						Outro computador: ptispo01dc01.pti.intra
+						Exibir: Tudo
+						<Concluir>
+					Serviços de Site do Active Directory;
+					Usuários e Computadores do Active Directory.
+				<OK>
+			Gerenciamento de Impressão: <Sim>
+			ADSI Editor
+				Botão direito do mouse: Conectar-se a...
+					Nome: ptispo01dc01.pti.intra
+					<OK>
+			DNS
+				No seguinte computador: ptispo01dc01.pti.intra
+				<OK>
+			Usuários e Computadores do Active Directory
+				Exibir
+					Recursos Avançados
+		Arquivo
+			Salvar como
+				Área de Trabalho
+					MMC-UCSUnivention
+			<Salvar>
+					
 
