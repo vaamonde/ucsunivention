@@ -192,8 +192,8 @@ A RSAT (Remote Server Administration Tools - Ferramentas de Administração de S
 
 O MMC (Microsoft Management Console - Console de Gerenciamento da Microsoft) server para criar, salvar e abrir ferramentas administrativas, chamadas de consoles, que gerenciam os componentes de hardware, software e rede do seu sistema operacional microsoft Windows. O MMC é executado em todos os sistemas operacionais cliente com suporte no momento.
 
-[![RSAT Windows 10](http://img.youtube.com/vi//0.jpg)]( "RSAT Windows 10")
+[![RSAT Windows 10](http://img.youtube.com/vi/Jb6GYmmlinM/0.jpg)](https://www.youtube.com/watch?v=Jb6GYmmlinM "RSAT Windows 10")
 
-Link da vídeo aula: 
+Link da vídeo aula: https://www.youtube.com/watch?v=Jb6GYmmlinM
 
 Link do script utilizado nesse vídeo: https://github.com/vaamonde/ucsunivention/blob/master/etapas/Etapa-012-InstalandoRSAT.txt
