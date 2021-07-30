@@ -7,38 +7,28 @@ Facebook Bora para Prática: https://www.facebook.com/BoraParaPratica
 Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem
 YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica
 LinkedIn Robson Vaamonde: https://www.linkedin.com/in/robson-vaamonde-0b029028/
-Data de criação: 24/01/2021
-Data de atualização: 21/06/2021
-Versão: 0.05
+Data de criação: 30/07/2021
+Data de atualização: 30/07/2021
+Versão: 0.01
 Testado e homologado no UCS Univention Core Free 5.0.x
 
-Documentação da versão 5.0.x
-04 Oct 2019 The Decision has been made: UCS 5.0 is coming!: https://www.univention.com/blog-en/2019/10/the-decision-has-been-made-ucs-5-0-is-coming/
-16 Oct 2020 UCS 5.0 status update: Beta Release in December 2020: https://www.univention.com/blog-en/2020/10/ucs-5-0-status-update-beta-release-in-december-2020/
-11 Dec 2020 UCS 5.0 – Focus instead of feature overkill: https://www.univention.com/blog-en/2020/12/ucs-5-0-discontinued-features/
-16 Dec 2020 UCS 5.0 Beta: Preview of the new generation: https://www.univention.com/blog-en/2020/12/ucs-5-0-beta-released/#comment-16772
-22 Mar 2021 UCS 5.0 Release Candidate 0: https://help.univention.com/t/ucs-5-0-release-candidate-0/17545
-23 Mar 2021 Download UCS 5.0.0 RC0: https://download.software-univention.de/download/ucs-cds/ucs5.0-0-rc0/
-24 Mar 2021 UCS 5.0 – first release candidate published: https://www.univention.com/blog-en/2021/03/ucs-5-0-first-release-candidate-published/
-21 Apr 2021 UCS 5.0 - UCS 5.0 Release Candidate 1: https://help.univention.com/t/ucs-5-0-release-candidate-1/17721
-21 Apr 2021 Download UCS 5.0.0 RC1: https://download.software-univention.de/download/ucs-cds/ucs5.0-0-rc1/
-26 May 2021 New Design and modern Core: https://www.univention.com/blog-en/2021/05/release-univention-corporate-server-5-0-2/ 
-
-Primeira etapa: Download da ISO do UCS Univention Core Free:
-01. Link de download do UCS 5.0.x: https://download.software-univention.de/download/ucs-cds/ucs5.0-0-rc0/
-02. Versão do download UCS: 5.0.x RC0 (23/03/2021)
-03. Arquitetura do UCS: AMD64 (64-bit)
-04. Tipo de instalação: DVD Image (ISO) Installer
-
-01. Link de download do UCS 5.0.x: https://download.software-univention.de/download/ucs-cds/ucs5.0-0-rc1/
-02. Versão do download UCS: 5.0.x RC1 (21/04/2021)
-03. Arquitetura do UCS: AMD64 (64-bit)
-04. Tipo de instalação: DVD Image (ISO) Installer
-
-01. Link Oficial da Versão 5.0.x: https://www.univention.com/downloads/download-ucs/
-02. Documentação Oficial da Versão 5.0.x: https://docs.software-univention.de/index.html.en
-
+Atualização do UCS: https://docs.software-univention.de/quickstart-en-5.0.html
+Manual do UCS: https://docs.software-univention.de/manual-5.0.html
+Active Directory UCS: https://www.univention.com/products/ucs/functions/services-windows-samba/
+Active Directory Compatible: https://www.univention.com/products/univention-app-center/app-catalog/samba4/
+Release Notes UCS 5.0: https://docs.software-univention.de/release-notes-5.0-0-en.html
 UCS Univention Performance guide: https://docs.software-univention.de/performance-guide-5.0.pdf
+Instalação do UCS: https://docs.software-univention.de/quickstart-en-5.0.html
+
+OBSERVAÇÃO IMPORTANTE: Na versão 5.0 do UCS as funções do sistema foram renomeadas.
+DE: Controlador de Domínio Mestre	--> PARA: Nó de Diretório Primário;
+DE: Controlador de Domínio Backup	--> PARA: Nó de Diretório Backup;
+DE: Controlador de domínio Escravo	--> PARA: Nó de Diretório Réplica;
+DE: Servidor Membro do Domínio		--> PARA: Nó Gerenciado.
+
+Nó de Domínio Backup: é o sistema de fallback (queda) para o Nó de Diretório Primário do UCS, 
+ele pode assumir a função de Nó de Diretório Primário permanentemente se for necessário, é 
+recomendado usar pelo menos um nó de diretório de backup no domínio.
 
 Segunda etapa: Criação e Configuração da Máquina Virtual no Oracle VirtualBOX
 01. Ferramentas;
@@ -84,8 +74,6 @@ Segunda etapa: Criação e Configuração da Máquina Virtual no Oracle VirtualB
 			Nome: (deixar o padrão do sistema: intnet)
 	<OK>
 
-Instalação do UCS: https://docs.software-univention.de/quickstart-en-5.0.html
-
 Terceira etapa: Adicionando a ISO do UCS Univention
 01. VM UCS-Univention-5.0: 
 	<Iniciar>
@@ -118,13 +106,13 @@ Quarta Etapa: Instalando o UCS Univention 5.0.x Core Free
 		American English
 		<Continue>
 06. Configure the network
-		IP address: 172.16.1.10/24
+		IP address: 172.16.1.11/24
 		<Continue>
 07. Configure the network
 		Gateway: 172.16.1.254
 		<Continue>
 08. Configure the network
-		Name server addresses: 172.16.1.10 172.16.1.254 8.8.8.8
+		Name server addresses: 172.16.1.10 172.16.1.11 172.16.1.254
 		<Continue>
 09. Se up users and passwords
 		Root password: pti@2018
@@ -150,20 +138,25 @@ Quarta Etapa: Instalando o UCS Univention 5.0.x Core Free
 
 Quinta Etapa: Configuração o UCS Univention 5.0.x Core Free
 01. Domain setup
-		Create a new UCS domain (Recommended)
+		Join into an existing UCS domain
 		<Next>
-02. Account information
-		Organization name: Bora para Pratica 
-		E-mail address to active UCS: email@boraparapratica.com.br
+02. System role
+		Backup Directory Node
 		<Next>
-03. Host settings
-		Fully qualified domain name: ptispo01dc01.pti.intra
-		LDAP base: dc=pti,dc=intra
+03. Domain join information
+		[Select] Start join at the end of the installation
+		[Select] Search Primary Directory Node in DNS
+		Hostname of the Primary Directory Node: ptispo01dc01.pti.intra
+		Username: administrator
+		Password: pti@2018
 		<Next>
-04. Confirm configuration settings
-		Disable: Update system after setup
+04. Host settings
+		Specify the name of this system: ptispo01dc02.pti.intra
+		<Next>
+05. Confirm configuration settings
+		[Disable] Update system after setup
 		<Configure System>
-05. UCS setup successful
+06. UCS setup successful
 		<Finish>
 
 Sexta etapa: Atualizando o UCS Univention
@@ -178,15 +171,9 @@ Sexta etapa: Atualizando o UCS Univention
 
 Sétima etapa: Acessando o WebManagement do UCS Univention
 01. Acessar o WebManagement (recomendado utilizar o navegado Firefox)
-		https://172.16.1.10
+		https://ptispo01dc01.pti.intra
 		Avançado
 		Aceitar o risco e continuar
-02. System and Domain Manager
+02. Server overview
 		Username: administrator
 		Password: pti@2018
-03. Welcome to UMC
-		Everything worked great <Next>
-		Enable one-time statistic on hardware configuration <Next>
-		Upload License File... <Next>
-		Further information <Next>
-		Completion of startup wizard: <Finish>
