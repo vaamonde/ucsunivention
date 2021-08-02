@@ -24,10 +24,10 @@ Scenarios for Univention Corporate Server: https://docs.software-univention.de/s
 OBSERVAÇÃO IMPORTANTE: Na versão 5.0 do UCS as funções do sistema foram renomeadas.
 DE: Controlador de Domínio Mestre	--> PARA: Nó de Diretório Primário;
 DE: Controlador de Domínio Backup	--> PARA: Nó de Diretório Backup;
-DE: Controlador de domínio Escravo	--> PARA: Nó de Diretório Réplica;
+DE: Controlador de Domínio Escravo	--> PARA: Nó de Diretório Réplica;
 DE: Servidor Membro do Domínio		--> PARA: Nó Gerenciado.
 
-Nó de Domínio Backup: é o sistema de fallback (queda) para o Nó de Diretório Primário do UCS, 
+Nó de Domínio Backup é o sistema de fallback (queda) para o Nó de Diretório Primário do UCS, 
 ele pode assumir a função de Nó de Diretório Primário permanentemente se for necessário, é 
 recomendado usar pelo menos um Nó de Diretório de Backup no domínio do UCS Core Free.
 
@@ -178,3 +178,8 @@ Sétima etapa: Acessando o WebManagement do UCS Univention
 02. Server overview
 		Username: administrator
 		Password: pti@2018
+
+Oitava etapa: Reconfiguração dos Principais Serviços de Rede
+01. Rede
+02. DHCP
+03. LDAP

@@ -197,3 +197,21 @@ O MMC (Microsoft Management Console - Console de Gerenciamento da Microsoft) ser
 Link da vídeo aula: https://www.youtube.com/watch?v=Jb6GYmmlinM
 
 Link do script utilizado nesse vídeo: https://github.com/vaamonde/ucsunivention/blob/master/etapas/Etapa-012-InstalandoRSAT.txt
+
+## **#013_ Instalando o Nó de Domínio Backup do UCS Univention Core Free 5.0**
+
+Vídeo mostrando os procedimentos básicos para instalar e configurar o Nó de Domínio Backup do UCS Univention Core Free 5.0.x no VirtualBOX.
+
+Nó de Domínio Backup é o sistema de fallback (queda) para o Nó de Diretório Primário do UCS, ele pode assumir a função de Nó de Diretório Primário permanentemente se for necessário, é recomendado usar pelo menos um Nó de Diretório de Backup no domínio do UCS Core Free.
+
+OBSERVAÇÃO IMPORTANTE: Na versão 5.0 do UCS as funções do sistema foram renomeadas.
+DE: Controlador de Domínio Mestre	--> PARA: Nó de Diretório Primário;
+DE: Controlador de Domínio Backup	--> PARA: Nó de Diretório Backup;
+DE: Controlador de Domínio Escravo	--> PARA: Nó de Diretório Réplica;
+DE: Servidor Membro do Domínio		--> PARA: Nó Gerenciado.
+
+[![Backup UCS](http://img.youtube.com/vi//0.jpg)]("Backup UCS")
+
+Link da vídeo aula: 
+
+Link do script utilizado nesse vídeo: https://github.com/vaamonde/ucsunivention/blob/master/etapas/Etapa-013-BackupDirectoryNode.txt
