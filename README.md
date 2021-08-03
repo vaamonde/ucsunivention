@@ -210,8 +210,8 @@ DE: Controlador de Domínio Backup	--> PARA: Nó de Diretório Backup;
 DE: Controlador de Domínio Escravo	--> PARA: Nó de Diretório Réplica;
 DE: Servidor Membro do Domínio		--> PARA: Nó Gerenciado.
 
-[![Backup UCS](http://img.youtube.com/vi//0.jpg)]("Backup UCS")
+[![Backup UCS](http://img.youtube.com/vi/N3T7g8i9YRg/0.jpg)](https://www.youtube.com/watch?v=N3T7g8i9YRg "Backup UCS")
 
-Link da vídeo aula: 
+Link da vídeo aula: https://www.youtube.com/watch?v=N3T7g8i9YRg
 
 Link do script utilizado nesse vídeo: https://github.com/vaamonde/ucsunivention/blob/master/etapas/Etapa-013-BackupDirectoryNode.txt
