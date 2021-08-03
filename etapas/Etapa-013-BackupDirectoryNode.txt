@@ -8,8 +8,8 @@ Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem
 YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica
 LinkedIn Robson Vaamonde: https://www.linkedin.com/in/robson-vaamonde-0b029028/
 Data de criação: 30/07/2021
-Data de atualização: 02/08/2021
-Versão: 0.02
+Data de atualização: 03/08/2021
+Versão: 0.03
 Testado e homologado no UCS Univention Core Free 5.0.x
 
 Atualização do UCS: https://docs.software-univention.de/quickstart-en-5.0.html
@@ -60,7 +60,7 @@ Segunda etapa: Criação e Configuração da Máquina Virtual no Oracle VirtualB
 08. Configurações da Máquina Virtual UCS (Propriedades/Configurações)
 	Sistema
 		Processador
-			Processadores: 02 CPUs
+			Processadores: 02 CPU's
 			Recursos Estendidos: Habilitar PAE/NX
 	Monitor
 		Tela
@@ -123,7 +123,7 @@ Quarta Etapa: Instalando o UCS Univention 5.0.x Core Free
 		Partitioning method: Guided - use entire disk and set up LVM
 		<Continue>
 11. Partition disks
-		Select disk to partition: SCSI3 (0,0,0)(sda) - 53,7 GB ATA VBOX HARDISK
+		Select disk to partition: SCSI3 (0,0,0)(sda) - 53,7 GB ATA VBOX HARD DISK
 		<Continue>
 12 Partition disks
 		Partitioning scheme: Separate /home, /var and /tmp partitions
@@ -160,7 +160,7 @@ Quinta Etapa: Configuração o UCS Univention 5.0.x Core Free
 06. UCS setup successful
 		<Finish>
 
-Sexta etapa: Atualizando o UCS Univention
+Sexta etapa: Atualizando o UCS Univention 5.0.x Core Free
 01. Login
 		login: root <Enter>
 		password: pti@2018 <Enter>
@@ -178,8 +178,58 @@ Sétima etapa: Acessando o WebManagement do UCS Univention
 02. Server overview
 		Username: administrator
 		Password: pti@2018
+03. Acessando os servidores remotamente
+		https://ptispo01dc01.pti.intra
+		https://ptispo01dc02.pti.intra
 
 Oitava etapa: Reconfiguração dos Principais Serviços de Rede
-01. Rede
-02. DHCP
-03. LDAP
+01. Configuração da Rede no Servidor Backup
+	System
+		Network settings
+			Domain name server:
+				172.16.1.11
+				172.16.1.10
+		Apply changes
+			Apply changes
+
+02. Configuração da Rede no Servidor Primário
+	System
+		Network settings
+			Domain name server:
+				172.16.1.10
+				172.16.1.11
+		Apply changes
+			Apply changes
+
+03. Configuração do Serviço de DHCP no Servidor Primário
+	Domain
+		DHCP
+			pti.intra
+				172.16.1.0 (Subnet)
+					Policies
+						Policy: DHCP DNS
+							Edit Policy
+								Domain name server:
+									172.16.1.10
+									172.16.1.11
+							Save
+				Save
+
+04. Instalação do SAMBA-4 Active Directory no UCS Univention Backup
+	App Center 
+		Installed in domain
+			Active Directory-Compatible Domain Controller
+				Manage Installations
+					Install 
+						Host for installation of App: ptispo01dc02.pti.intra
+						Continue
+						Start Installation
+
+05. Renovação do endereçamento IPv4 do Desktop Windows 10.
+	Pesquisa do Windows
+		Power Shell
+			ipconfig /release
+			ipconfig /renew
+			ipconfig /all
+			nslookup pti.intra
+			ping pti.intra
