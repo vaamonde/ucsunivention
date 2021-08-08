@@ -7,9 +7,9 @@ Facebook Bora para Prática: https://www.facebook.com/BoraParaPratica
 Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem
 YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica
 LinkedIn Robson Vaamonde: https://www.linkedin.com/in/robson-vaamonde-0b029028/
-Data de criação: 06/08/2021
+Data de criação: 08/08/2021
 Data de atualização: 08/08/2021
-Versão: 0.02
+Versão: 0.01
 Testado e homologado no UCS Univention Core Free 5.0.x
 
 Atualização do UCS: https://docs.software-univention.de/quickstart-en-5.0.html
@@ -27,9 +27,8 @@ DE: Controlador de Domínio Backup	--> PARA: Nó de Diretório Backup;
 DE: Controlador de Domínio Escravo	--> PARA: Nó de Diretório Réplica;
 DE: Servidor Membro do Domínio		--> PARA: Nó Gerenciado.
 
-Nó de Domínio Replica é o sistema ideal para servidores em sites remotos, eles fornecem serviços
-de autenticação para o domínio. Os serviços locais executados em um nó de diretório de réplica 
-podem acessar o banco de dados LDAP local.
+Os Nós Gerenciados devem ser usados ​​para serviços que não precisam de bancos de 
+dados de autenticação local, por exemplo, para servidores de arquivo ou impressão.
 
 Primeira etapa: Criação e Configuração da Máquina Virtual no Oracle VirtualBOX
 01. Ferramentas;
@@ -107,13 +106,13 @@ Terceira Etapa: Instalando o UCS Univention 5.0.x Core Free
 		American English
 		<Continue>
 06. Configure the network
-		IP address: 172.16.1.30/24
+		IP address: 172.16.1.40/24
 		<Continue>
 07. Configure the network
 		Gateway: 172.16.1.254
 		<Continue>
 08. Configure the network
-		Name server addresses: 172.16.1.10 172.16.1.11 172.16.1.30
+		Name server addresses: 172.16.1.10 172.16.1.11
 		<Continue>
 09. Se up users and passwords
 		Root password: pti@2018
@@ -152,7 +151,7 @@ Quarta Etapa: Configuração o UCS Univention 5.0.x Core Free
 		Password: pti@2018
 		<Next>
 04. Host settings
-		Specify the name of this system: ptispo02dc01.pti.intra
+		Specify the name of this system: ptispo01st01.pti.intra
 		<Next>
 05. Confirm configuration settings
 		[Disable] Update system after setup
@@ -180,4 +179,4 @@ Sexta etapa: Acessando o WebManagement do UCS Univention
 		Password: pti@2018
 03. Acessando os servidores remotamente
 		https://ptispo01dc01.pti.intra
-		https://ptispo01dc02.pti.intra
+		https://ptispo01st01.pti.intra
