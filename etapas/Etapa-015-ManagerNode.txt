@@ -30,6 +30,13 @@ DE: Servidor Membro do Domínio		--> PARA: Nó Gerenciado.
 Os Nós Gerenciados devem ser usados ​​para serviços que não precisam de bancos de 
 dados de autenticação local, por exemplo, para servidores de arquivo ou impressão.
 
+OBSERVAÇÃO-01: O Servidor LDAP primário deste Sistema (UCR ldap/server/name) é definido para 
+o Nó do Diretório Primário deste domínio UCS (ptispo01dc01.pti.intra). Como este ambiente 
+fornece mais servidores LDAP, recomendamos uma configuração diferente para reduzir a carga no 
+Nó do Diretório Primário. Consulte o Banco de dados de suporte da Univention, recomendamos
+alterar o servidor LDAP primário para redistribuir a carga do servidor em grandes redes. 
+Link: https://help.univention.com/t/changing-the-primary-ldap-server-to-redistribute-the-server-load/14138
+
 Primeira etapa: Criação e Configuração da Máquina Virtual no Oracle VirtualBOX
 01. Ferramentas;
 		Novo
