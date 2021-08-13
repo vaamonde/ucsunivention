@@ -8,8 +8,8 @@ Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem
 YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica
 LinkedIn Robson Vaamonde: https://www.linkedin.com/in/robson-vaamonde-0b029028/
 Data de criação: 06/08/2021
-Data de atualização: 08/08/2021
-Versão: 0.02
+Data de atualização: 13/08/2021
+Versão: 0.03
 Testado e homologado no UCS Univention Core Free 5.0.x
 
 Atualização do UCS: https://docs.software-univention.de/quickstart-en-5.0.html
@@ -28,8 +28,13 @@ DE: Controlador de Domínio Escravo	--> PARA: Nó de Diretório Réplica;
 DE: Servidor Membro do Domínio		--> PARA: Nó Gerenciado.
 
 Nó de Domínio Replica é o sistema ideal para servidores em sites remotos, eles fornecem serviços
-de autenticação para o domínio. Os serviços locais executados em um nó de diretório de réplica 
+de autenticação para o domínio. Os serviços locais executados em um Nó de Diretório de Réplica 
 podem acessar o banco de dados LDAP local.
+
+OBSERVAÇÃO IMPORTANTE: não confundir com os conceitos do Windows Server de: Domínio Filho, nesse
+cenário e criado um subdomínio, exemplo: filial.pti.intra, no caso do UCS isso não funciona dessa
+forma, será feito a replica do Domínio Primário, exemplo: pti.intra para a filial, depois será
+instalado e configurado localmente os recursos e serviços de rede.
 
 Primeira etapa: Criação e Configuração da Máquina Virtual no Oracle VirtualBOX
 01. Ferramentas;
@@ -181,3 +186,4 @@ Sexta etapa: Acessando o WebManagement do UCS Univention
 03. Acessando os servidores remotamente
 		https://ptispo01dc01.pti.intra
 		https://ptispo01dc02.pti.intra
+		https://ptispo02dc01.pti.intra
