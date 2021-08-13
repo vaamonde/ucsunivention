@@ -215,3 +215,23 @@ DE: Servidor Membro do Domínio		--> PARA: Nó Gerenciado.
 Link da vídeo aula: https://www.youtube.com/watch?v=N3T7g8i9YRg
 
 Link do script utilizado nesse vídeo: https://github.com/vaamonde/ucsunivention/blob/master/etapas/Etapa-013-BackupDirectoryNode.txt
+
+## **#014_ Instalando o Nó de Domínio Réplica do UCS Univention Core Free 5.0**
+
+Vídeo mostrando os procedimentos básicos para instalar e configurar o Controlador de Domínio Escravo atualmente chamado do Nó de Diretório Replica do UCS Univention Core Free 5.0
+
+Nó de Domínio Backup é o sistema de fallback (queda) para o Nó de Diretório Primário do UCS, ele pode assumir a função de Nó de Diretório Primário permanentemente se for necessário, é recomendado usar pelo menos um Nó de Diretório de Backup no domínio do UCS Core Free.
+
+OBSERVAÇÃO IMPORTANTE: no vídeo não foi falado sobre a ordem de inicialização dos servidores UCS, o correto e sempre iniciar o Servidor de Nó de Diretório Primário, aguardar a sua inicialização, depois iniciar o Servidor de Nó de Diretório Backup para que o sincronismo entre os servidores seja feito de forma correta, o procedimento para desligar é o inverso, primeiro o Backup depois o Primário.
+
+OBSERVAÇÃO IMPORTANTE: Na versão 5.0 do UCS as funções do sistema foram renomeadas.
+DE: Controlador de Domínio Mestre	--> PARA: Nó de Diretório Primário;
+DE: Controlador de Domínio Backup	--> PARA: Nó de Diretório Backup;
+DE: Controlador de Domínio Escravo	--> PARA: Nó de Diretório Réplica;
+DE: Servidor Membro do Domínio		--> PARA: Nó Gerenciado.
+
+[![Replica UCS](http://img.youtube.com/vi/roBAQU0FTG8/0.jpg)](https://www.youtube.com/watch?v=roBAQU0FTG8 "Replica UCS")
+
+Link da vídeo aula: https://www.youtube.com/watch?v=roBAQU0FTG8
+
+Link do script utilizado nesse vídeo: https://github.com/vaamonde/ucsunivention/blob/master/etapas/Etapa-014-ReplicaDirectoryNode.txt
