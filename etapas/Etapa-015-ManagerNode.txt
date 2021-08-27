@@ -41,7 +41,7 @@ Primeira etapa: Criação e Configuração da Máquina Virtual no Oracle Virtual
 01. Ferramentas;
 		Novo
 			Nome e Sistema Operacional:
-			Nome: UCS-Replica
+			Nome: UCS-Membro
 			Pasta da Máquina: (deixar o padrão do sistema) 
 			Tipo: Linux
 			Versão: Debian (64-bit)

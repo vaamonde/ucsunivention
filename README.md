@@ -241,3 +241,23 @@ DE: Servidor Membro do Domínio		--> PARA: Nó Gerenciado.
 Link da vídeo aula: https://www.youtube.com/watch?v=roBAQU0FTG8
 
 Link do script utilizado nesse vídeo: https://github.com/vaamonde/ucsunivention/blob/master/etapas/Etapa-014-ReplicaDirectoryNode.txt
+
+## **#015_ Instalando o Nó Gerenciado do UCS Univention Core Free 5.0**
+
+Vídeo mostrando os procedimentos básicos para instalar e configurar o Servidor Membro de Domínio atualmente chamado do Nó Gerenciado do UCS Univention Core Free 5.0
+
+Os Nós Gerenciados devem ser usados ​​para serviços de rede que não precisam de bancos de 
+dados de autenticação local, por exemplo, para servidores de arquivo ou impressão.
+
+OBSERVAÇÃO IMPORTANTE: Na versão 5.0 do UCS as funções do sistema foram renomeadas.<br>
+DE: Controlador de Domínio Mestre	--> PARA: Nó de Diretório Primário;<br>
+DE: Controlador de Domínio Backup	--> PARA: Nó de Diretório Backup;<br>
+DE: Controlador de Domínio Escravo	--> PARA: Nó de Diretório Réplica;<br>
+DE: Servidor Membro do Domínio		--> PARA: Nó Gerenciado.
+
+[![Managed UCS](http://img.youtube.com/vi/ph5vFmySGpk/0.jpg)](https://www.youtube.com/watch?v=ph5vFmySGpk "Managed UCS")
+
+Link da vídeo aula: https://www.youtube.com/watch?v=ph5vFmySGpk
+
+Link do script utilizado nesse vídeo: https://github.com/vaamonde/ucsunivention/blob/master/etapas/Etapa-015-ManagerNode.txt
+
