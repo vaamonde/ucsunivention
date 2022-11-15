@@ -80,7 +80,7 @@ Quinta etapa: Ingressando o Linux Mint e Ubuntu Desktop no Domínio do UCS
 			Close
 		Reiniciar o Sistema
 
-OBSERVAÇÃO IMPORTANTE: no vídeo não foi mostrado o arquivo de Log da ingresso da máquina 
+OBSERVAÇÃO IMPORTANTE: no vídeo não foi mostrado o arquivo de Log do ingresso da máquina 
 GNU/Linux Mint ou Ubuntu no domínio, sua localização fica em: /var/log/univention/, lá
 temos os arquivos de Logs: domain-join-gui.log e domain-join-gui-cli.log.
 

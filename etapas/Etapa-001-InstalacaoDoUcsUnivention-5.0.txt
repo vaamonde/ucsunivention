@@ -8,9 +8,9 @@ Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem
 YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica
 LinkedIn Robson Vaamonde: https://www.linkedin.com/in/robson-vaamonde-0b029028/
 Data de criação: 24/01/2021
-Data de atualização: 21/06/2021
-Versão: 0.05
-Testado e homologado no UCS Univention Core Free 5.0.x
+Data de atualização: 14/11/2022
+Versão: 0.06
+Testado e homologado no UCS Univention Core Free 5.0.x - Errata: 479
 
 Documentação da versão 5.0.x
 04 Oct 2019 The Decision has been made: UCS 5.0 is coming!: https://www.univention.com/blog-en/2019/10/the-decision-has-been-made-ucs-5-0-is-coming/
@@ -37,8 +37,8 @@ Primeira etapa: Download da ISO do UCS Univention Core Free:
 
 01. Link Oficial da Versão 5.0.x: https://www.univention.com/downloads/download-ucs/
 02. Documentação Oficial da Versão 5.0.x: https://docs.software-univention.de/index.html.en
-
-UCS Univention Performance guide: https://docs.software-univention.de/performance-guide-5.0.pdf
+03. Link das Correções (Errata) do UCS Univention: https://errata.software-univention.de/#/
+04. UCS Univention Performance guide: https://docs.software-univention.de/performance-guide-5.0.pdf
 
 Segunda etapa: Criação e Configuração da Máquina Virtual no Oracle VirtualBOX
 01. Ferramentas;
@@ -66,7 +66,7 @@ Segunda etapa: Criação e Configuração da Máquina Virtual no Oracle VirtualB
 				Tamanho do disco: 50GB
 				<Criar>
 
-08. Configurações da Máquina Virtual UCS (Propriedades/Configurações)
+08. Configurações da Máquina Virtual UCS Univention (Propriedades/Configurações)
 	Sistema
 		Processador
 			Processadores: 02 CPUs
